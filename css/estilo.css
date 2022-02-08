@@ -376,7 +376,6 @@ Media Querys */
     .header {
         display: flex;
         list-style: none;
-        background-color: white;
     }
 
     /* LOGO */

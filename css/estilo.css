@@ -132,9 +132,6 @@ header .nav__links ul .nav__links--activo:hover {
 }
 
 @media (max-width: 768px) {
-    header {
-        /* ENCABEZADO */
-    }
 
     header header {
         background: #f0c17b;
@@ -188,7 +185,7 @@ body {
 .nosotros h1 {
     font-family: "Satisfy", cursive;
     font-style: italic;
-    font-font-size: 6rem;
+    font-size: 6rem;
     color: black;
     font-size: 6rem;
     font-weight: 100;

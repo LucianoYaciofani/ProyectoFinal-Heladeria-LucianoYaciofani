@@ -40,6 +40,7 @@ header {
 .nav__links li a {
     color: #795548;
     text-decoration: none;
+    font-size: 1.3rem;
 }
 
 /* MAYUSCULAS EN MENU */
@@ -55,8 +56,8 @@ main {
 
 /* TITULOS SECCIONES */
 .seccion {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-size: 3rem;
     color: #8c9eff;
     border-top: double;
@@ -76,10 +77,10 @@ main {
     padding-bottom: 40px;
     font-size: 1.5rem;
     color: #5d4037;
-    font-weight: 10px;
+    font-weight: 900;
     line-height: 30px;
     width: 80%;
-    margin: 1.5rem auto;
+    margin: 0.5rem auto;
 }
 
 /* FONDOS SECCIONES */
@@ -89,52 +90,73 @@ main {
     background-size: 50rem;
 }
 
-/* TABLA */
-.seccion__tabla {
-    display: inline-block;
-    padding-bottom: 10rem;
-}
-
+/* TABLAS */
 table {
+    display: inline-block;
+    margin: 60px;
     background-color: #8c9eff;
     color: #fff59d;
+}
+
+/* TABLAS */
+.tablaCrem {
+    position: relative;
+    right: 500px;
+    border-radius: 0.5rem;
+}
+
+/* TABLAS */
+.tablaDdl {
+    position: absolute;
+    right: 250px;
+    border-radius: 0.5rem;
+}
+
+/* TABLAS */
+.tablaCh {
+    position: absolute;
+    left: 450px;
+    border-radius: 0.5rem;
+}
+
+/* TABLAS */
+.tablaAgua {
+    position: absolute;
+    right: 550px;
+    border-radius: 0.5rem;
 }
 
 /* FONDOS SECCIONES */
 .fondoLocal {
     background-image: url(../img/mapaheladeria.png);
     position: relative;
+    background-position: 1rem;
+    background-size: 115rem;
 }
 
-
+/* PARRAFO LOCAL */
 .seccion__parrafo-local {
     font-size: 1.5rem;
     color: #5d4037;
     background-color: #8c9eff;
-    font-weight: 10px;
-    line-height: 30px;
+    font-weight: 900;
+    line-height: 1.2;
     position: absolute;
     top: 14rem;
     left: 10rem;
     text-decoration: none;
     border: double;
+    border-radius: 0.5rem;
 }
 
 /* MAPA HELADERIA */
 iframe {
-    position: relative;
     margin: 25px;
-    left: 20rem;
-    border: double 10px;
-
+    padding-left: 40rem;
+    padding-bottom: 4rem;
 }
 
-/* FONDOS SECCIONES */
-.fondoContacto {
-    position: relative;
-}
-
-/* FORMULARIO */
+/* FORMULARIO DE CONTACTO*/
 .seccion__form {
     display: inline-block;
     width: 75%;
@@ -142,7 +164,7 @@ iframe {
     padding: 1.5rem 1rem;
 }
 
-/* FORMULARIO */
+/* FORMULARIO-INPUT */
 .seccion__form-input {
     width: 60%;
     margin: 0.5rem;
@@ -150,10 +172,11 @@ iframe {
     border: none;
     border-bottom: solid 1px;
     font-size: 1rem;
-
+    background-color: #8c9eff;
+    border-radius: 0.5rem;
 }
 
-/* FORMULARIO */
+/* FORMULARIO-TEXTO */
 .seccion__form-text {
     width: 60%;
     margin: 0.5rem;
@@ -161,9 +184,11 @@ iframe {
     border: none;
     border-bottom: solid 1px;
     font-size: 1rem;
+    background-color: #8c9eff;
+    border-radius: 0.5rem;
 }
 
-/* FORMULARIO */
+/* FORMULARIO-SUBMIT */
 .seccion__form-sub {
     width: 60%;
     margin: 0.5rem;
@@ -175,6 +200,7 @@ iframe {
     margin-bottom: 40px;
     border-radius: 0.5rem;
     font-weight: 600;
+    background-color: #8c9eff;
 }
 
 /* PIE DE PAGINA */
@@ -213,7 +239,7 @@ footer {
     font-weight: bold;
 }
 
-
+/* LISTAS RRSS */
 footer ul li a {
     color: #795548;
     text-decoration: none;

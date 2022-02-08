@@ -1,0 +1,220 @@
+/* UNIVERSAL */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: white;
+    position: relative;
+}
+
+/* LOGO */
+.logo {
+    width: 13%;
+    height: auto;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+/* MENU - NAV */
+.nav__links {
+    position: absolute;
+    top: 2.5rem;
+    right: 5rem;
+    text-decoration: none;
+}
+
+/* MENU - LISTAS */
+.nav__links li {
+    display: inline-block;
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* LISTAS */
+.nav__links li a {
+    color: #795548;
+    text-decoration: none;
+}
+
+/* MAYUSCULAS EN MENU */
+.nav__links--activo {
+    text-transform: uppercase;
+}
+
+/* PRINCIPAL */
+main {
+    background-color: #f1f8e9;
+    text-align: center;
+}
+
+/* TITULOS SECCIONES */
+.seccion {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 3rem;
+    color: #8c9eff;
+    border-top: double;
+}
+
+/* IMAGEN PPAL */
+.img {
+    border: double;
+    text-align: center;
+    width: 98%;
+    border-radius: 0.5rem;
+}
+
+/* PARRAFOS PRINCIPALES DE LAS SECCIONES */
+.seccion__parrafo {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 1.5rem;
+    color: #5d4037;
+    font-weight: 10px;
+    line-height: 30px;
+    width: 80%;
+    margin: 1.5rem auto;
+}
+
+/* FONDOS SECCIONES */
+.fondoProductos {
+    background-image: url(../img/tiramisu.png);
+    background-position: 10rem;
+    background-size: 50rem;
+}
+
+/* TABLA */
+.seccion__tabla {
+    display: inline-block;
+    padding-bottom: 10rem;
+}
+
+table {
+    background-color: #8c9eff;
+    color: #fff59d;
+}
+
+/* FONDOS SECCIONES */
+.fondoLocal {
+    background-image: url(../img/mapaheladeria.png);
+    position: relative;
+}
+
+
+.seccion__parrafo-local {
+    font-size: 1.5rem;
+    color: #5d4037;
+    background-color: #8c9eff;
+    font-weight: 10px;
+    line-height: 30px;
+    position: absolute;
+    top: 14rem;
+    left: 10rem;
+    text-decoration: none;
+    border: double;
+}
+
+/* MAPA HELADERIA */
+iframe {
+    position: relative;
+    margin: 25px;
+    left: 20rem;
+    border: double 10px;
+
+}
+
+/* FONDOS SECCIONES */
+.fondoContacto {
+    position: relative;
+}
+
+/* FORMULARIO */
+.seccion__form {
+    display: inline-block;
+    width: 75%;
+    margin: 3rem auto;
+    padding: 1.5rem 1rem;
+}
+
+/* FORMULARIO */
+.seccion__form-input {
+    width: 60%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: solid 1px;
+    font-size: 1rem;
+
+}
+
+/* FORMULARIO */
+.seccion__form-text {
+    width: 60%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: solid 1px;
+    font-size: 1rem;
+}
+
+/* FORMULARIO */
+.seccion__form-sub {
+    width: 60%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: solid 1px;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 40px;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+/* PIE DE PAGINA */
+footer {
+    position: relative;
+    border-top: double;
+    color: #8c9eff
+}
+
+/* FONDO DE PIE DE PAGINA */
+.pieDePag {
+    background-color: burlywood;
+}
+
+/* DERECHOS DE AUTOR */
+.pieDePag__Derecho {
+    margin: 25px;
+    margin-left: 45px;
+    display: inline-block;
+    color: black;
+}
+
+/* REDES SOCIALES - LISTAS */
+.pieDePagRRSS__list {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 2rem;
+}
+
+/* REDES SOCIALES-LISTAS */
+.pieDePagRRSS__list li {
+    display: inline-block;
+    margin: 10px;
+    margin-bottom: 4px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+footer ul li a {
+    color: #795548;
+    text-decoration: none;
+}

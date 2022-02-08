@@ -5,6 +5,7 @@ $redes: (instagram: white,
     facebook: #3b5998,
 );
 
+
 @each $red,
 $color in $redes {
     .red--#{$red} {
@@ -20,6 +21,20 @@ $color in $redes {
     }
 }
 
+$textoResaltado: (heladeria: black,
+    gelato: black,
+);
+
+
+@each $frases,
+$color in $textoResaltado {
+    .#{$frases} {
+        color: $color;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 25px;
+    }
+}
 
 // MAP-GET
 $estiloForm: (colorr: $marron,

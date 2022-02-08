@@ -28,6 +28,18 @@ Importacion de fuentes de Google Font
   color: #3b5998;
   background-color: white; }
 
+.heladeria {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px; }
+
+.gelato {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px; }
+
 /* GRID */
 .grilla {
   display: grid;
@@ -129,13 +141,13 @@ body {
 /* SECCIONES */
 .nosotros {
   grid-area: nosotros;
+  padding: 0px;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   color: #FFEEAD;
-  /* ANCHO CARROUSEL PPAL */
-  /* PARRAFO PRINCIPAL DE LA SECCIÓN */ }
+  /* ANCHO CARROUSEL PPAL */ }
   .nosotros h1 {
     font-family: "Satisfy", cursive;
     font-style: italic;
@@ -150,45 +162,58 @@ body {
       font-style: initial;
       font-size: 2rem;
       letter-spacing: 10px; }
-  .nosotros h2 {
-    font-family: "Bebas Neue", cursive;
-    color: #D9534F;
-    font-size: 5rem;
-    font-weight: 100;
-    line-height: 100px;
-    width: 80%;
-    letter-spacing: 4px; }
   .nosotros .alto {
-    height: 100vh;
+    height: 90vh;
     /* IMAGENES DEL CARROUSEL */ }
     .nosotros .alto img {
       position: relative;
       width: 100vw;
       bottom: 350px;
-      z-index: -1; }
+      z-index: -1;
+      padding-bottom: 2rem; }
     .nosotros .alto .cucurucho {
       position: relative;
       top: 100px;
       z-index: -1; }
-  .nosotros p {
-    color: #666666;
-    font-size: 1.5rem;
-    font-weight: 100;
-    line-height: 30px;
-    width: 80%;
-    /* TEXTO SELECCIONADO */ }
-    .nosotros p span {
-      font-weight: 600;
-      font-size: larger;
-      color: #4b4a4a; }
-    .nosotros p:hover {
-      background-color: #96CEB4;
+  .nosotros .fondocono {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/img/conomult.jpg);
+    padding-top: 2rem;
+    /* PARRAFO PRINCIPAL DE LA SECCIÓN */ }
+    .nosotros .fondocono h2 {
+      font-family: "Bebas Neue", cursive;
+      color: #D9534F;
+      font-size: 5rem;
+      font-weight: 100;
+      line-height: 100px;
+      width: 80%;
+      letter-spacing: 4px; }
+    .nosotros .fondocono p {
       color: #666666;
-      transition-duration: 2s;
-      padding: 1rem;
-      border: double;
-      border-radius: 0.5rem;
-      width: 80%; }
+      font-size: 1.5rem;
+      font-weight: 100;
+      line-height: 30px;
+      width: 80%;
+      /*span {
+                font: {
+                    weight: 600;
+                    size: larger;
+                }
+
+                color: #4b4a4a;
+            }*/
+      /* TEXTO SELECCIONADO */ }
+      .nosotros .fondocono p:hover {
+        background-color: #96CEB4;
+        color: #666666;
+        transition-duration: 2s;
+        padding: 1rem;
+        border: double;
+        border-radius: 0.5rem;
+        width: 80%; }
 
 .productos {
   display: grid;
@@ -207,8 +232,9 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: flex-start;
   align-items: center;
+  color: white;
+  justify-content: flex-start;
   /* PARRAFO PRINCIPAL DE LA SECCIÓN */ }
   .titulo h2 {
     font-family: "Bebas Neue", cursive;
@@ -332,6 +358,12 @@ body {
     transition-duration: 2s; }
   .local .local iframe {
     display: flex; }
+  .local .borde {
+    border: double;
+    border-radius: 0.5rem; }
+
+.fondo {
+  background-color: white; }
 
 /* SECCIONES */
 .contacto {
@@ -356,7 +388,7 @@ body {
   .contacto p {
     color: #666666;
     font-size: 1.5rem;
-    font-weight: 900;
+    font-weight: 100;
     line-height: 30px;
     width: 100%;
     /* TEXTO SELECCIONADO */ }

@@ -5,6 +5,7 @@ body {
 /* SECCIONES */
 .nosotros {
     grid-area: nosotros;
+    padding: 0px;
     @include grilla (flex, column, center, center, $amarillo);
 
     // TITULO PRINCIPAL
@@ -29,17 +30,9 @@ body {
         @include estilosParrafo(black, 6rem, 100, 70px, 80%);
     }
 
-    // TITULO DE LA SECCION
-    h2 {
-        font-family: $letraTitulos;
-        // LLAMO AL MIXIN PRO REALIZADO
-        @include estilosParrafo($colorado, 5rem, 100, 100px, 80%);
-        letter-spacing: 4px;
-    }
-
     /* ANCHO CARROUSEL PPAL */
     .alto {
-        height: 100vh;
+        height: 90vh;
 
         /* IMAGENES DEL CARROUSEL */
         img {
@@ -47,6 +40,7 @@ body {
             width: 100vw;
             bottom: 350px;
             z-index: -1;
+            padding-bottom: 2rem;
         }
 
         .cucurucho {
@@ -56,31 +50,51 @@ body {
         }
     }
 
-    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
-    p {
-        // LLAMO AL MIXIN PRO REALIZADO
-        @include estilosParrafo($letra, 1.5rem, 100, 30px, 80%);
+    .fondocono {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(/img/conomult.jpg);
+        padding-top: 2rem;
 
-        span {
-            font: {
-                weight: 600;
-                size: larger;
-            }
+        // TITULO DE LA SECCION
+        h2 {
 
-            color: #4b4a4a;
+            font-family: $letraTitulos;
+            // LLAMO AL MIXIN PRO REALIZADO
+            @include estilosParrafo($colorado, 5rem, 100, 100px, 80%);
+            letter-spacing: 4px;
         }
 
-        /* TEXTO SELECCIONADO */
-        &:hover {
-            background-color: $verde;
-            color: $letra;
-            transition-duration: 2s;
-            padding: 1rem;
-            border: double;
-            border-radius: 0.5rem;
-            width: 80%;
+        /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+        p {
+            // LLAMO AL MIXIN PRO REALIZADO
+            @include estilosParrafo($letra, 1.5rem, 100, 30px, 80%);
+
+            /*span {
+                font: {
+                    weight: 600;
+                    size: larger;
+                }
+
+                color: #4b4a4a;
+            }*/
+
+            /* TEXTO SELECCIONADO */
+            &:hover {
+                background-color: $verde;
+                color: $letra;
+                transition-duration: 2s;
+                padding: 1rem;
+                border: double;
+                border-radius: 0.5rem;
+                width: 80%;
+            }
         }
     }
+
+
 }
 
 .productos {
@@ -100,11 +114,8 @@ body {
 
 .titulo {
     grid-area: titulo;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    @include grilla (flex, column, center, center, white);
     justify-content: flex-start;
-    align-items: center;
 
     // TITULO DE LA SECCION
     h2 {
@@ -117,8 +128,6 @@ body {
     /* PARRAFO PRINCIPAL DE LA SECCIÓN */
     p {
         // LLAMO AL MIXIN PRO REALIZADO
-
-
         @include estilosParrafo($letra, 1.5rem, 900, 30px, 80%);
         background-color: $fondo;
         border: double;
@@ -199,6 +208,7 @@ body {
         letter-spacing: 4px;
     }
 
+
     /* PARRAFO PRINCIPAL DE LA SECCIÓN */
     p {
         // LLAMO AL MIXIN PRO REALIZADO
@@ -221,6 +231,15 @@ body {
     .local iframe {
         display: flex;
     }
+
+    .borde {
+        border: double;
+        border-radius: 0.5rem;
+    }
+}
+
+.fondo {
+    background-color: white;
 }
 
 /* SECCIONES */
@@ -241,7 +260,7 @@ body {
     /* PARRAFO PRINCIPAL DE LA SECCIÓN */
     p {
         // LLAMO AL MIXIN PRO REALIZADO
-        @include estilosParrafo($letra, 1.5rem, 900, 30px, 100%);
+        @include estilosParrafo($letra, 1.5rem, 100, 30px, 100%);
 
         /* TEXTO SELECCIONADO */
         &:hover {

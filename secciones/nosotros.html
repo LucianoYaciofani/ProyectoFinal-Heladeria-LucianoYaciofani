@@ -5,56 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Externo de Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Link FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Link de Animate Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Link del estilo de CSS -->
     <link rel="stylesheet" href="../css/estilo.css">
-    <link rel="shortcut icon" href="../img/logocircular.png">
+    <!-- Icono pequeño -->
+    <link rel="shortcut icon" href="./img/portada1a.png">
+    <!-- Titulo Pestaña Navegador -->
     <title>Heladeria Piace</title>
 </head>
 
 <body>
-    <!-- Encabezado con lista no ordenadas de las secciones -->
-    <header class="encabezado">
-        <img class="logo" src="../img/logocircular.png" alt="Logo">
-        <nav class="nav">
-            <ul class="nav__links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a class="nav__links--activo" href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./local.html">Local</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div>
-            <h2 class="seccion">Nosotros</h2>
-            <img class="img" src="../img/portada1a.png" alt="Logo Heladeria">
-            <p class="seccion__parrafo">Heladeria Piace se inicia como heladería en Italia pero con el nombre de
-                Gelateria Il Piace Los Andes en
-                Alife el 19 de Febrero de 2014, frecuentando previamente un curso con maestros heladeros como Filippo
-                Zampieron, Federico Maronatti, Giuseppe Scaringella y Vincenzo Baldassarre en la ciudad de Rovigo,
-                nordeste de Italia.
-                Gracias a nuestros maestros hemos podido brindar a nuestros clientes una excelencia en la calidad de
-                nuestro producto, apoyados en la tecnología de avanzada y en la elección de la materia prima que Italia
-                provee. Hoy gracias a un mercado abierto, en Argentina podemos contar con igual tecnología y materia
-                prima italiana. <br>
-                Cuando Los Andes decide ser vendida en el 2017, el diario "Il Mattino di Alife" nos brinda un espacio en
-                foto y
-                reportaje gracias al reconocimiento de nuestra clientela.
-                Nosotros, hijos de italianos, regresamos a nuestro país con la misma propuesta que ofrecimos en Italia.
-                <br>
-                Nace Piace en Quilmes en 2019, para ofrecerle un <strong>GELATO DI ALTA QUALITA.</strong>
-            </p>
-        </div>
-    </main>
-    <footer class="pieDePag">
-        <p class="pieDePag__Derecho">Copyright 2020. <b>Heladeria Piace</b>. "All rights reserved."<br></p>
-        <ul class="pieDePagRRSS__list">
-            <li><a href="https://www.facebook.com/pages/category/Product-Service/Piace-Heladeria-109135280913624/"
-                    target="_blank" class="fB">Facebook</a></li>
-            <li><a href="https://www.instagram.com/piaceheladeria/?hl=es" target="_blank">Instagram</a></li>
-        </ul>
-    </footer>
-    </footer>
+    <div class="grilla">
+        <header>
+            <div class="header">
+                <img src="../img/logocircular.png" alt="Logo">
+                <!-- Menú navegación -->
+                <nav class="nav__links">
+                    <!-- Secciones -->
+                    <ul>
+                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                                href="../index.html">Home</a>
+                        </li>
+                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                                href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                                href="./productos.html">Productos</a>
+                        </li>
+                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                                href="./local.html">Local</a>
+                        </li>
+                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                                href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!-- 1ra sección: Nosotros -->
+            <div class="nosotros">
+                <!-- 1ra sección: Nosotros -->
+                <h2>NOSOTROS</h2>
+                <!-- Logo empresa -->
+                <img src="../img/portada1a.png" alt="Logo Heladeria">
+                <!-- Historia -->
+                <p> Heladeria Piace se inicia como heladería en Italia pero con el nombre de
+                    Gelateria Il Piace Los Andes
+                    en
+                    Alife el 19 de Febrero de 2014, frecuentando previamente un curso con maestros heladeros como
+                    Filippo
+                    Zampieron, Federico Maronatti, Giuseppe Scaringella y Vincenzo Baldassarre en la ciudad de Rovigo,
+                    nordeste de Italia.
+                    Gracias a nuestros maestros hemos podido brindar a nuestros clientes una excelencia en la calidad de
+                    nuestro producto, apoyados en la tecnología de avanzada y en la elección de la materia prima que
+                    Italia
+                    provee. Hoy gracias a un mercado abierto, en Argentina podemos contar con igual tecnología y materia
+                    prima italiana. <br>
+                    Somos nombrados en el libro "El Golosario. Guida alle mille e piu cose buone d'Italia" de Paolo
+                    Massobrio como una de las cuatro mejores heladerías de Caserta. <br>
+                    Cuando Los Andes decide ser vendida en el 2017, el diario "Il Mattino di Alife" nos brinda un
+                    espacio en foto y reportaje gracias al reconocimiento de nuestra clientela. <br>
+                    Nosotros, hijos de italianos, regresamos a nuestro país con la misma propuesta que ofrecimos en
+                    Italia.
+                    <br>
+                    Nace Piace en Quilmes en 2019, para ofrecerle un <strong>GELATO DI ALTA QUALITA.</strong> <br>
+                </p>
+            </div>
+        </main>
+        <footer>
+            <!-- Aquí comienza el pie de página donde estan los links de RRSS -->
+            <div class="footer">
+                <p>Copyright 2020. <b>Heladeria Piace</b>. "All rights reserved."<br></p>
+                <div class="footer__links">
+                    <ul>
+                        <li class="animate__animated animate__rubberBand"><a
+                                href="https://www.facebook.com/pages/category/Product-Service/Piace-Heladeria-109135280913624/"
+                                target="_blank"><i class="fab fa-facebook-square" alt="Facebook"></i></a></li>
+                        <li class="animate__animated animate__rubberBand"><a
+                                href="https://www.instagram.com/piaceheladeria/?hl=es" target="_blank"><i
+                                    class="fab fa-instagram" alt="Instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>

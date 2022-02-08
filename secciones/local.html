@@ -5,47 +5,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Externo de Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Link FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Link de Animate Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Link del estilo de CSS -->
     <link rel="stylesheet" href="../css/estilo.css">
-    <link rel="shortcut icon" href="../img/logocircular.png">
+    <!-- Icono pequeño -->
+    <link rel="shortcut icon" href="./img/portada1a.png">
+    <!-- Titulo Pestaña Navegador -->
     <title>Heladeria Piace</title>
 </head>
 
 <body>
-    <!-- Encabezado con lista no ordenadas de las secciones -->
-    <header class="encabezado">
-        <img class="logo" src="../img/logocircular.png" alt="Logo">
-        <nav class="nav">
-            <ul class="nav__links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a class="nav__links--activo" href="./local.html">Local</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="fondoLocal">
-            <h2 class="seccion">LOCAL</h2>
-            <p class="seccion__parrafo-local"><strong>Quilmes Oeste</strong>
-                <br>
-                Av, Rodolfo Lopez 3611, Quilmes
-                <br>
-                11-1111-1111
-            </p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2757.0459305415434!2d-58.29707719154845!3d-34.73798994070406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32dc1342d4f37%3A0x6246737ec9ec7379!2sRodolfo%20L%C3%B3pez%203611%2C%20Quilmes%20Oeste%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1638582867133!5m2!1ses-419!2sar"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </main>
-    <footer class="pieDePag">
-        <p class="pieDePag__Derecho">Copyright 2020. <b>Heladeria Piace</b>. "All rights reserved."<br></p>
-        <ul class="pieDePagRRSS__list">
-            <li><a href="https://www.facebook.com/pages/category/Product-Service/Piace-Heladeria-109135280913624/"
-                    target="_blank" class="fB">Facebook</a></li>
-            <li><a href="https://www.instagram.com/piaceheladeria/?hl=es" target="_blank">Instagram</a></li>
-        </ul>
-    </footer>
+    <div class="grilla">
+        <header>
+            <div class="header">
+                <img src="../img/logocircular.png" alt="Logo">
+                <!-- Menú navegación -->
+                <nav class="nav__links">
+                    <!-- Secciones -->
+                    <ul>
+                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                                href="../index.html">Home</a>
+                        </li>
+                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                                href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                                href="./productos.html">Productos</a>
+                        </li>
+                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                                href="./local.html">Local</a>
+                        </li>
+                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                                href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="local">
+                <h2>LOCAL</h2>
+                <!-- Dirección del Local junto con mapa -->
+                <div class="local__ubicacion">
+                    <p><strong>Quilmes Oeste</strong>
+                        <br>
+                        Av, Rodolfo Lopez 3611, Quilmes
+                        <br>
+                        11-1111-1111
+                    </p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2757.0459305415434!2d-58.29707719154845!3d-34.73798994070406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32dc1342d4f37%3A0x6246737ec9ec7379!2sRodolfo%20L%C3%B3pez%203611%2C%20Quilmes%20Oeste%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1638582867133!5m2!1ses-419!2sar"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!-- Aquí comienza el pie de página donde estan los links de RRSS -->
+            <div class="footer">
+                <p>Copyright 2020. <b>Heladeria Piace</b>. "All rights reserved."<br></p>
+                <div class="footer__links">
+                    <ul>
+                        <li class="animate__animated animate__rubberBand"><a
+                                href="https://www.facebook.com/pages/category/Product-Service/Piace-Heladeria-109135280913624/"
+                                target="_blank"><i class="fab fa-facebook-square" alt="Facebook"></i></a></li>
+                        <li class="animate__animated animate__rubberBand"><a
+                                href="https://www.instagram.com/piaceheladeria/?hl=es" target="_blank"><i
+                                    class="fab fa-instagram" alt="Instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>

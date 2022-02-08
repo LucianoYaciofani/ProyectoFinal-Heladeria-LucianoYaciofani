@@ -5,62 +5,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilo.css">
+    <!-- Link Externo de Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Link FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Link de Animate Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Link del estilo de CSS -->
     <link rel="stylesheet" href="../css/estilo.css">
-    <link rel="shortcut icon" href="../img/logocircular.png">
+    <!-- Icono pequeño -->
+    <link rel="shortcut icon" href="./img/portada1a.png">
+    <!-- Titulo Pestaña Navegador -->
     <title>Heladeria Piace</title>
 </head>
 
 <body>
-    <!-- Encabezado con lista no ordenadas de las secciones -->
-    <header class="encabezado">
-        <img class="logo" src="../img/logocircular.png" alt="Logo">
-        <nav class="nav">
-            <ul class="nav__links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./local.html">Local</a></li>
-                <li><a class="nav__links--activo" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="fondoContacto">
-            <h2 class="seccion">CONTACTO</h2>
-            <p class="seccion__parrafo">Ingrese aquí sus datos, su consulta y nos contactaremos a la brevedad.</p>
-        </div>
-        <div class="seccion__form">
-            <form action="#" method="GET">
-                <input type="text" placeholder="Ingresá tu nombre y apellido" name="Dato1" label="enviar-nombre"
-                    required class="seccion__form-input">
+    <div class="grilla">
+        <header>
+            <div class="header">
+                <img src="../img/logocircular.png" alt="Logo">
+                <!-- Menú navegación -->
+                <nav class="nav__links">
+                    <!-- Secciones -->
+                    <ul>
+                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                                href="../index.html">Home</a>
+                        </li>
+                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                                href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                                href="./productos.html">Productos</a>
+                        </li>
+                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                                href="./local.html">Local</a>
+                        </li>
+                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                                href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!-- 1ra sección: Nosotros -->
+            <div class="contacto">
+                <h2>CONTACTO</h2>
+                <p>Ingrese aquí sus datos, su consulta y nos contactaremos a la brevedad.
+                </p>
+                <!-- Formulario de Contacto -->
+                <form action="#" method="GET" class="contacto__form">
+                    <div class="contacto__form-row">
+                        <div class="contacto__form-column">
+                            <input type="text" placeholder="Ingresá tu nombre y apellido" name="Dato1"
+                                label="enviar-nombre" required class="contacto__form-input">
 
-                <input type="email" placeholder="Ingresá tu mail" name="Mail" required class="seccion__form-input">
+                            <input type="email" placeholder="Ingresá tu mail" name="Mail" required
+                                class="contacto__form-input">
 
-                <input type="tel" placeholder="Ingresá tu nro" name="Telefono" required class="seccion__form-input">
+                            <input type="tel" placeholder="Ingresá tu nro" name="Telefono" required
+                                class="contacto__form-input">
 
-                <input type="text" placeholder="Asunto" name="Dato2" required class="seccion__form-input">
-
-                <textarea placeholder="Ingresa tu consulta" name="Consulta" cols="30" rows="10" required
-                    class="seccion__form-text"></textarea>
-                <div>
-                    <p class="seccion__parrafo">Acepta términos y condiciones?</p>
-                    <input type="checkbox" name="Acepta" value="SI">
+                            <input type="text" placeholder="Asunto" name="Dato2" required class="contacto__form-input">
+                        </div>
+                        <div class="contacto__form">
+                            <textarea placeholder="Ingresa tu consulta" name="Consulta" cols="30" rows="10" required
+                                class="contacto__form-text"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Acepta términos y condiciones?</p>
+                        <input type="checkbox" name="Acepta" value="SI" class="contacto__form-sub">
+                    </div>
+                    <div>
+                        <input type="submit" value="ENVIAR" class="contacto__form-sub">
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <!-- Aquí comienza el pie de página donde estan los links de RRSS -->
+            <div class="footer">
+                <p>Copyright 2020. <b>Heladeria Piace</b>. "All rights reserved."<br></p>
+                <div class="footer__links">
+                    <ul>
+                        <li class="animate__animated animate__rubberBand"><a
+                                href="https://www.facebook.com/pages/category/Product-Service/Piace-Heladeria-109135280913624/"
+                                target="_blank"><i class="fab fa-facebook-square" alt="Facebook"></i></a></li>
+                        <li class="animate__animated animate__rubberBand"><a
+                                href="https://www.instagram.com/piaceheladeria/?hl=es" target="_blank"><i
+                                    class="fab fa-instagram" alt="Instagram"></i></a></li>
+                    </ul>
                 </div>
-                <div>
-                    <input type="submit" value="ENVIAR" class="seccion__form-sub">
-                </div>
-            </form>
-        </div>
-    </main>
-    <footer class="pieDePag">
-        <p class="pieDePag__Derecho">Copyright 2020. <b>Heladeria Piace</b>. "All rights reserved."<br></p>
-        <ul class="pieDePagRRSS__list">
-            <li><a href="https://www.facebook.com/pages/category/Product-Service/Piace-Heladeria-109135280913624/"
-                    target="_blank" class="fB">Facebook</a></li>
-            <li><a href="https://www.instagram.com/piaceheladeria/?hl=es" target="_blank">Instagram</a></li>
-        </ul>
-    </footer>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

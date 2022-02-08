@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link Externo de Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- SEO -->
+    <meta name="keywords"
+        content="helado, heladeria, sabor artesanal, sabores, local, ubicacion, cremas, Italia, Argentina, helado artesanal, calle, local fisico">
+    <meta name="description"
+        content="Página de la sección 'Local' de la heladeria Piace en la cual encontrarás donde esta ubicado el local.">
     <!-- Link FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- Link de Animate Style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- LINK DE CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Link del estilo de CSS -->
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- Icono pequeño -->
-    <link rel="shortcut icon" href="./img/portada1a.png">
+    <link rel="shortcut icon" href="../img/logocircular.png">
     <!-- Titulo Pestaña Navegador -->
-    <title>Heladeria Piace</title>
+    <title>Piace -- Local</title>
 </head>
 
 <body>
@@ -30,7 +34,7 @@
                 <!-- Menú navegación -->
                 <nav class="nav__links">
                     <!-- Secciones -->
-                    <ul>
+                    <ul class="fw-bold h4 list-unstyled">
                         <li class="animate__animated animate__bounce"><a class="nav__links--activo"
                                 href="../index.html">Home</a>
                         </li>
@@ -51,11 +55,12 @@
             </div>
         </header>
         <main>
-            <div class="local">
-                <h2>LOCAL</h2>
+            <!-- 3ra sección: Local y tiene un Iframe -->
+            <section class="local container-fluid">
+                <h2 class="display-5 fw-bold mt-5">LOCAL</h2>
                 <!-- Dirección del Local junto con mapa -->
-                <div class="local__ubicacion">
-                    <p><strong>Quilmes Oeste</strong>
+                <div class="local__ubicacion d-flex justify-content-around align-items-center w-100 mb-5 mt-5">
+                    <p class="local--activo mb-5 mt-5"><strong>Quilmes Oeste</strong>
                         <br>
                         Av, Rodolfo Lopez 3611, Quilmes
                         <br>
@@ -65,7 +70,7 @@
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2757.0459305415434!2d-58.29707719154845!3d-34.73798994070406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32dc1342d4f37%3A0x6246737ec9ec7379!2sRodolfo%20L%C3%B3pez%203611%2C%20Quilmes%20Oeste%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1638582867133!5m2!1ses-419!2sar"
                         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-            </div>
+            </section>
         </main>
         <footer>
             <!-- Aquí comienza el pie de página donde estan los links de RRSS -->
@@ -75,14 +80,20 @@
                     <ul>
                         <li class="animate__animated animate__rubberBand"><a
                                 href="https://www.facebook.com/pages/category/Product-Service/Piace-Heladeria-109135280913624/"
-                                target="_blank"><i class="fab fa-facebook-square" alt="Facebook"></i></a></li>
+                                target="_blank"><i class="fab fa-facebook-square red--facebook" alt="Facebook"></i></a>
+                        </li>
                         <li class="animate__animated animate__rubberBand"><a
                                 href="https://www.instagram.com/piaceheladeria/?hl=es" target="_blank"><i
-                                    class="fab fa-instagram" alt="Instagram"></i></a></li>
+                                    class="fab fa-instagram red--instagram" alt="Instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
         </footer>
+    </div>
+    <!-- LINK DE JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

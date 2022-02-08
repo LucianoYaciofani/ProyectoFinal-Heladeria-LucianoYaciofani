@@ -1,0 +1,512 @@
+body {
+    font-family: $estiloProyecto1;
+}
+
+/* SECCIONES */
+.nosotros {
+    grid-area: nosotros;
+    @include grilla (flex, column, center, center, $amarillo);
+
+    // TITULO PRINCIPAL
+    h1 {
+        font: {
+            family: $letraLogo;
+            style: italic;
+            font-size: 6rem;
+        }
+
+        .otraLetra {
+            font: {
+                family: $estiloProyecto2;
+                style: initial;
+                size: 2rem;
+            }
+
+            letter-spacing: 10px;
+        }
+
+        // LLAMO AL MIXIN PRO REALIZADO
+        @include estilosParrafo(black, 6rem, 100, 70px, 80%);
+    }
+
+    // TITULO DE LA SECCION
+    h2 {
+        font-family: $letraTitulos;
+        // LLAMO AL MIXIN PRO REALIZADO
+        @include estilosParrafo($colorado, 5rem, 100, 100px, 80%);
+        letter-spacing: 4px;
+    }
+
+    /* ANCHO CARROUSEL PPAL */
+    .alto {
+        height: 100vh;
+
+        /* IMAGENES DEL CARROUSEL */
+        img {
+            position: relative;
+            width: 100vw;
+            bottom: 350px;
+            z-index: -1;
+        }
+
+        .cucurucho {
+            position: relative;
+            top: 100px;
+            z-index: -1;
+        }
+    }
+
+    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+    p {
+        // LLAMO AL MIXIN PRO REALIZADO
+        @include estilosParrafo($letra, 1.5rem, 100, 30px, 80%);
+
+        span {
+            font: {
+                weight: 600;
+                size: larger;
+            }
+
+            color: #4b4a4a;
+        }
+
+        /* TEXTO SELECCIONADO */
+        &:hover {
+            background-color: $verde;
+            color: $letra;
+            transition-duration: 2s;
+            padding: 1rem;
+            border: double;
+            border-radius: 0.5rem;
+            width: 80%;
+        }
+    }
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "titulo titulo titulo titulo"
+        "prod1 prod2 prod3 prod4";
+    grid-area: section2;
+    color: $amarillo;
+    border-top: solid;
+    background-image: url(/img/local25.jpg);
+    background-size: cover;
+}
+
+.titulo {
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+
+    // TITULO DE LA SECCION
+    h2 {
+        font-family: $letraTitulos;
+        // LLAMO AL MIXIN PRO REALIZADO
+        @include estilosParrafo($colorado, 5rem, 100, 100px, 80%);
+        letter-spacing: 4px;
+    }
+
+    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+    p {
+        // LLAMO AL MIXIN PRO REALIZADO
+
+
+        @include estilosParrafo($letra, 1.5rem, 900, 30px, 80%);
+        background-color: $fondo;
+        border: double;
+        border-radius: 0.5rem;
+
+        /* TEXTO SELECCIONADO */
+        &:hover {
+            background-color: $fondo;
+            color: $letra;
+            transition-duration: 2s;
+            border: double;
+            border-radius: 0.5rem;
+            width: 90%;
+        }
+    }
+}
+
+.prod1,
+.prod2,
+.prod3,
+.prod4 {
+    grid-area: prod1, prod2, prod3, prod4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    p {
+        // LLAMO AL MIXIN PRO REALIZADO
+        @include estilosParrafo($marron, 1.2rem, 900, 30px, 100%);
+        background-color: $fondo;
+        border: double;
+        border-radius: 0.5rem;
+
+        /* TEXTO SELECCIONADO */
+        &:hover {
+            background-color: $marron;
+            color: $amarillo;
+            transition-duration: 2s;
+            border: double;
+            border-radius: 0.5rem;
+            width: 100%;
+        }
+    }
+
+    /* LISTAS */
+    li {
+        list-style: none;
+        @include estilosParrafo($letra, 1rem, 100, 40px, 100%);
+        background-color: $fondo;
+        border: double;
+        border-radius: 0.5rem;
+        width: 100%;
+
+        &:hover {
+            background-color: $marron;
+            color: $amarillo;
+            transition-duration: 2s;
+            border: double;
+            border-radius: 0.5rem;
+            width: 100%;
+        }
+    }
+}
+
+/* SECCIONES */
+.local {
+    grid-area: locall;
+    @include grilla (flex, column, center, center, $amarillo);
+    border-top: double;
+    background-color: $verde;
+
+    // TITULO DE LA SECCION    
+    h2 {
+        font-family: $letraTitulos;
+        // LLAMO AL MIXIN PRO REALIZADO
+        @include estilosParrafo($colorado, 5rem, 100, 100px, 80%);
+        letter-spacing: 4px;
+    }
+
+    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+    p {
+        // LLAMO AL MIXIN PRO REALIZADO
+        @include estilosParrafo(black, 1.5rem, 900, 30px, 30%);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border: double;
+        border-radius: 0.5rem;
+        background-color: $fondo;
+    }
+
+    /* LOCAL SELECCIONADO */
+    .local--activo:hover {
+        background-color: $marron;
+        color: $amarillo;
+        transition-duration: 2s;
+    }
+
+    /* INFORMACIÓN DE SECCIÓN */
+    .local iframe {
+        display: flex;
+    }
+}
+
+/* SECCIONES */
+.contacto {
+    grid-area: contacto;
+    @include grilla (flex, column, center, center, $amarillo);
+    border-top: double;
+    background-color: $fondo;
+
+    // TITULO DE LA SECCION    
+    h2 {
+        font-family: $letraTitulos;
+        // LLAMO AL MIXIN PRO REALIZADO
+        @include estilosParrafo($colorado, 5rem, 100, 100px, 80%);
+        letter-spacing: 4px;
+    }
+
+    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+    p {
+        // LLAMO AL MIXIN PRO REALIZADO
+        @include estilosParrafo($letra, 1.5rem, 900, 30px, 100%);
+
+        /* TEXTO SELECCIONADO */
+        &:hover {
+            background-color: $marron;
+            color: $amarillo;
+            transition-duration: 2s;
+            border: double;
+            border-radius: 0.5rem;
+        }
+    }
+
+    /* FORMULARIO */
+    .contacto__form {
+        width: 80%;
+
+        .contacto__form-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        /* FORMULARIO-INPUT */
+        .contacto__form-input {
+            width: 80%;
+            @extend %estilosForm;
+        }
+
+        /* FORMULARIO-TEXTO */
+        .contacto__form-text {
+            width: 80%;
+            @extend %estilosForm;
+        }
+
+        /* FORMULARIO-SUBMIT */
+        .contacto__form-sub {
+            width: 60%;
+            @extend %estilosForm;
+            margin-bottom: 4rem;
+            font-weight: 600;
+        }
+
+        /* FORMULARIO SELECCIONADO */
+        .contacto__form--activo:hover {
+            background-color: $marron;
+            color: $amarillo;
+            transition-duration: 2s;
+        }
+    }
+}
+
+/*
+PASO 1: Definir estrategia --> MOBILE LAST
+PASO 2: Escribir media querys --> MAX WIDTH y BREAKPOINTS
+PASO 3: Codear condiciones
+
+Media Querys */
+
+/* Si como minimo tengo 768px de ancho.... */
+@media (max-width: 768px) {
+
+    /* SECCIONES */
+    .nosotros {
+        grid-area: nosotros;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        color: $amarillo;
+        border-top: double;
+        background-color: $celeste;
+
+        /* ANCHO CARROUSEL PPAL */
+        .ancho {
+            width: 90%;
+            text-align: center;
+            align-items: center;
+
+            /* IMAGENES DEL CARROUSEL */
+            img {
+                height: 70vh;
+                width: 100%;
+            }
+
+            /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+            p {
+                // LLAMO AL MIXIN PRO REALIZADO
+                @include estilosParrafo($mobileletra, 1.5rem, 900, 30px, 80%);
+                margin-bottom: 2rem;
+
+                /* TEXTO SELECCIONADO */
+                &:hover {
+                    background-color: $marron;
+                    color: $mobileletra;
+                    transition-duration: 2s;
+                }
+            }
+        }
+    }
+
+    /* SECCIONES */
+    .productos {
+        color: $marron;
+        border-top: double;
+
+        background: {
+            position: center;
+            size: cover;
+        }
+
+        /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+        p {
+            // LLAMO AL MIXIN PRO REALIZADO
+            @include estilosParrafo($marron, 1.5rem, 900, 30px, 80%);
+
+            margin: {
+                top: 2rem;
+                bottom: 2rem;
+            }
+
+            /* TEXTO SELECCIONADO */
+            &:hover {
+                background-color: $marron;
+                color: $amarillo;
+                transition-duration: 2s;
+            }
+        }
+
+        /* TABLAS DE SABORES*/
+        .productos__tablas {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            width: 90%;
+            margin-bottom: 4rem;
+            align-items: center;
+
+            /* TABLA DE SABORES*/
+            table {
+                width: 60%;
+                background-color: $amarillo;
+                color: $celeste;
+                border-radius: 0.5rem;
+                margin-bottom: 4rem;
+
+                /* TABLA SELECCIONADA */
+                &:hover {
+                    background-color: $marron;
+                    color: $amarillo;
+                    transition-duration: 2s;
+                }
+            }
+        }
+    }
+
+    /* SECCIONES */
+    .local {
+        color: $marron;
+        border-top: double;
+
+        background: {
+            position: center;
+            size: cover;
+        }
+
+        /* INFORMACIÓN DE SECCIÓN */
+        .local__ubicacion {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 4rem;
+        }
+
+        /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+        p {
+            // LLAMO AL MIXIN PRO REALIZADO
+            @include estilosParrafo($celeste, 1.5rem, 900, 30px, 60%);
+
+            margin: {
+                top: 2rem;
+                bottom: 3rem;
+            }
+
+            border: double;
+            border-radius: 0.5rem;
+            background-color: $amarillo;
+        }
+
+        /* LOCAL SELECCIONADO */
+        .local--activo:hover {
+            background-color: $marron;
+            color: $amarillo;
+            transition-duration: 2s;
+        }
+
+        /* INFORMACIÓN DE SECCIÓN */
+        .local iframe {
+            display: flex;
+        }
+    }
+
+    /* SECCIONES */
+    .contacto {
+        background-color: $celeste;
+        color: $marron;
+        border-top: double;
+
+        /* TITULO SECCIÓN */
+        h2 {
+            color: $mobileletra;
+        }
+
+        /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+        p {
+            // LLAMO AL MIXIN PRO REALIZADO
+            @include estilosParrafo($marron, 1.5rem, 900, 30px, 90%);
+            margin-top: 2rem;
+
+            /* TEXTO SELECCIONADO */
+            &:hover {
+                background-color: $marron;
+                color: $mobileletra;
+                transition-duration: 2s;
+            }
+        }
+
+        /* FORMULARIO */
+        .contacto__form {
+            width: 80%;
+
+            .contacto__form-row {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            /* FORMULARIO-INPUT */
+            .contacto__form-input {
+                @include estilosForm ($marron, 1rem, 1rem, 0.5rem, double, $amarillo, 0.5rem, 60%);
+                border-bottom: solid 1px;
+            }
+
+            /* FORMULARIO-TEXTO */
+            .contacto__form-text {
+                @include estilosForm ($marron, 1rem, 1rem, 0.5rem, double, $amarillo, 0.5rem, 75%);
+                border-bottom: solid 1px;
+            }
+
+            /* FORMULARIO-SUBMIT -- MAP-GET*/
+            .contacto__form-sub {
+                color: map-get($estiloForm, colorr);
+                width: map-get($estiloForm, ancho);
+                border: map-get($estiloForm, bordes);
+                border-bottom: map-get($estiloForm, bordeAbajo);
+                font-size: map-get($estiloForm, tamanio);
+                margin-bottom: map-get($estiloForm, margenAbajo);
+                border-radius: map-get($estiloForm, borde);
+                font-weight: map-get($estiloForm, peso);
+                background-color: map-get($estiloForm, fondo);
+            }
+
+            .contacto__form--activo:hover {
+                background-color: $marron;
+                color: $amarillo;
+                transition-duration: 2s;
+            }
+        }
+    }
+}

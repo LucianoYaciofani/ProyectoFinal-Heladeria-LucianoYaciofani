@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link Externo de Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- SEO -->
+    <meta name="keywords"
+        content="helado, heladeria, sabor artesanal, nuestra historia, contacto, productos, sabores, local, ubicacion, cremas, Italia, Argentina, origen, helado artesanal, historia, logo, chocolate, vainilla, frutilla, granizado, frutas al agua, calle, local fisico, formulario">
+    <meta name="description"
+        content="Página principal de la heladeria Piace donde encontrarás información de nuestro origen, los sabores que comercializamos, donde ubicarnos para degustar nuestras cremas y la forma de contactarnos.">
     <!-- Link FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- Link de Animate Style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- LINK DE CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Link del estilo de CSS -->
     <link rel="stylesheet" href="./css/estilo.css">
     <!-- Icono pequeño -->
-    <link rel="shortcut icon" href="./img/portada1a.png">
+    <link rel="shortcut icon" href="./img/logocircular.png">
     <!-- Titulo Pestaña Navegador -->
     <title>Heladeria Piace</title>
 </head>
@@ -26,24 +30,24 @@
     <div class="grilla">
         <header>
             <div class="header">
-                <img src="./img/logocircular.png" alt="Logo">
+                <a href="./index.html"><img src="./img/logocircular.png" alt="Logo"></a>
                 <!-- Menú navegación -->
                 <nav class="nav__links">
                     <!-- Secciones -->
-                    <ul>
-                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                    <ul class="fw-bold h4 list-unstyled">
+                        <li class="animate__animated animate__backInRight"><a class="nav__links--activo"
                                 href="./index.html">Home</a>
                         </li>
-                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                        <li class="animate__animated animate__backInRight"><a class="nav__links--activo"
                                 href="./secciones/nosotros.html">Nosotros</a>
                         </li>
-                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                        <li class="animate__animated animate__backInRight"><a class="nav__links--activo"
                                 href="./secciones/productos.html">Productos</a>
                         </li>
-                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                        <li class="animate__animated animate__backInRight"><a class="nav__links--activo"
                                 href="./secciones/local.html">Local</a>
                         </li>
-                        <li class="animate__animated animate__bounce"><a class="nav__links--activo"
+                        <li class="animate__animated animate__backInRight"><a class="nav__links--activo"
                                 href="./secciones/contacto.html">Contacto</a>
                         </li>
                     </ul>
@@ -53,13 +57,36 @@
         <!-- Distintas secciones de la web -->
         <!-- 1ra sección: Nosotros -->
         <main>
-            <div class="nosotros">
+            <section class="nosotros container-fluid">
                 <!-- 1ra sección: Nosotros -->
-                <h2>NOSOTROS</h2>
-                <!-- Logo empresa -->
-                <img src="./img/portada1a.png" alt="Logo Heladeria">
+                <h1 class="mt-5 animate__animated animate__backInRight">Piace <br> <span class="otraLetra">
+                        HELADERIA</span></h1>
+                <!-- <h2 class="animate__animated animate__backInLeft">EL MEJOR HELADO ARTESANAL</h2> -->
+                <div id="carouselWithControls" class="carousel slide alto row mt-5 mb-5" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="img/portada1.jpg" class="d-block img-fluid" alt="Chocolate">
+                        </div>
+                        <div class="carousel-item cucurucho">
+                            <img src="./img/portada2.jpg" class="d-block img-fluid w-80" alt="Cucurucho">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="img/portada3.jpg" class="d-block img-fluid" alt="Crema">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselWithControls" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselWithControls" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </a>
+                </div>
                 <!-- Historia -->
-                <p> Heladeria Piace se inicia como heladería en Italia pero con el nombre de
+                <h2 class="mb-5">NOSOTROS</h2>
+                <p class="mb-5"> <span>Heladeria Piace</span> se inicia como heladería en Italia pero con el
+                    nombre de
                     Gelateria Il Piace Los Andes
                     en
                     Alife el 19 de Febrero de 2014, frecuentando previamente un curso con maestros heladeros como
@@ -70,83 +97,150 @@
                     nuestro producto, apoyados en la tecnología de avanzada y en la elección de la materia prima que
                     Italia
                     provee. Hoy gracias a un mercado abierto, en Argentina podemos contar con igual tecnología y materia
-                    prima italiana. <br>
+                    prima italiana. <br> <br>
                     Somos nombrados en el libro "El Golosario. Guida alle mille e piu cose buone d'Italia" de Paolo
-                    Massobrio como una de las cuatro mejores heladerías de Caserta. <br>
+                    Massobrio como una de las cuatro mejores heladerías de Caserta. <br> <br>
                     Cuando Los Andes decide ser vendida en el 2017, el diario "Il Mattino di Alife" nos brinda un
-                    espacio en foto y reportaje gracias al reconocimiento de nuestra clientela. <br>
+                    espacio en foto y reportaje gracias al reconocimiento de nuestra clientela. <br> <br>
                     Nosotros, hijos de italianos, regresamos a nuestro país con la misma propuesta que ofrecimos en
                     Italia.
                     <br>
-                    Nace Piace en Quilmes en 2019, para ofrecerle un <strong>GELATO DI ALTA QUALITA.</strong> <br>
+                    Nace Piace en Quilmes en 2019, para ofrecerle un <span>GELATO DI ALTA QUALITA.</span><br><br>
                 </p>
-            </div>
+            </section>
             <!-- 2da sección: Productos y se agrega una tabla -->
-            <div class="productos">
-                <h2>PRODUCTOS</h2>
-                <!-- Sección Productos -->
-                <p>Nuestros productos están elaborados con la mejor calidad.</p>
+            <section class="productos container-fluid">
+                <div class="titulo">
+                    <h2 class="mt-5">PRODUCTOS</h2>
+                    <!-- Sección Productos -->
+                    <p class="mt-3 mb-5">Nuestros productos están elaborados de manera artesanal con la mejor materia
+                        prima.
+                    </p>
+                </div>
                 <!-- Tablas con Productos -->
-                <div class="productos__tablas">
-                    <table border="3" cellpadding="5" cellspacing="10" class="tablaCrem tabla--activo">
-                        <thead>
-                            <tr>
-                                <th>Cremas</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Crema del cielo</td>
-                            </tr>
-                            <tr>
-                                <td>Vainilla</td>
-                            </tr>
-                            <tr>
-                                <td>Americana</td>
-                            </tr>
-                            <tr>
-                                <td>Crema Rocklets</td>
-                            </tr>
-                            <tr>
-                                <td>Frutilla</td>
-                            </tr>
-                            <tr>
-                                <td>Frutilla Cadbury</td>
-                            </tr>
-                            <tr>
-                                <td>Banana Split</td>
-                            </tr>
-                            <tr>
-                                <td>Granizado</td>
-                            </tr>
-                            <tr>
-                                <td>Crema Flan</td>
-                            </tr>
-                            <tr>
-                                <td>Tiramisu</td>
-                            </tr>
-                            <tr>
-                                <td>Mascarpone</td>
-                            </tr>
-                            <tr>
-                                <td>Frutos del bosque</td>
-                            </tr>
-                            <tr>
-                                <td>Sambayon</td>
-                            </tr>
-                            <tr>
-                                <td>Menta Granizada</td>
-                            </tr>
-                            <tr>
-                                <td>Crema Rusa</td>
-                            </tr>
-                            <tr>
-                                <td>Nutella</td>
-                            </tr>
-                            <tr>
-                                <td>Mantecol</td>
-                            </tr>
-                        </tbody>
+                <div class="prod1 mt-5 mb-5">
+                    <ul>
+                        <p>CREMAS</p>
+                        <li>Crema del cielo</li>
+                        <li>Crema del cielo</li>
+                        <li>Crema Flan</li>
+                        <li>Crema Oreo</li>
+                        <li>Crema Rocklets</li>
+                        <li>Crema Rusa</li>
+                        <li>Vainilla</li>
+                        <li>Americana</li>
+                        <li>Granizado</li>
+                        <li>Frutilla a la Crema</li>
+                        <li>Nutella</li>
+                    </ul>
+                </div>
+                <div class="prod2 mt-5 mb-5">
+                    <ul>
+                        <li>Cereza a la Crema</li>
+                        <li>Frutilla Cadbury</li>
+                        <li>Mantecol</li>
+                        <li>Banana Split</li>
+                        <li>Tramontana</li>
+                        <li>Tiramisu</li>
+                        <li>Menta Granizada</li>
+                        <li>Mousse de Limón</li>
+                        <li>Frutos del Bosque</li>
+                        <li>Mascarpone con Fr del Bosque</li>
+                        <li>Maracuya</li>
+                        <li>Sambayon C/ Almendras</li>
+                    </ul>
+                </div>
+                <div class="prod3 mt-5 mb-5">
+                    <ul>
+                        <P>FRUTAS AL AGUA</P>
+                        <li>Limón al Agua</li>
+                        <li>Anana al Agua</li>
+                        <li>Frutilla al Agua</li>
+                        <br>
+                        <p>CHOCOLATES</p>
+                        <li>Chocolate</li>
+                        <li>Chocolate C/ Almendras</li>
+                        <li>Chocolate C/ Nueces</li>
+                        <li>Chocolate Rocher</li>
+                        <li>Chocolate Marroc</li>
+                        <li>Chocolate Cabsha</li>
+                    </ul>
+                </div>
+                <div class="prod4 mt-5 mb-5">
+                    <ul>
+                        <li>Chocolate Amargo</li>
+                        <li>Chocolate Suizo</li>
+                        <li>Chocolate Blanco</li>
+                        <li>Chocolate Kinder</li>
+                        <br>
+                        <p>DULCES DE LECHE</p>
+                        <li>Dulce de Leche </li>
+                        <li>Dulce de Leche Granizado</li>
+                        <li>Dulce de Leche Tentación</li>
+                        <li>Dulce de Leche Havanna</li>
+                        <li>Dulce de Leche C/ Almendras</li>
+                        <li>Dulce de Leche C/ Nueces</li>
+                    </ul>
+                </div>
+                <!-- <div class="productos__tablas mt-5 mb-5 w-100">
+                    <thead>
+                        <tr>
+                            <th>Cremas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Crema del cielo</td>
+                        </tr>
+                        <tr>
+                            <td>Vainilla</td>
+                        </tr>
+                        <tr>
+                            <td>Americana</td>
+                        </tr>
+                        <tr>
+                            <td>Crema Rocklets</td>
+                        </tr>
+                        <tr>
+                            <td>Frutilla</td>
+                        </tr>
+                        <tr>
+                            <td>Frutilla Cadbury</td>
+                        </tr>
+                        <tr>
+                            <td>Banana Split</td>
+                        </tr>
+                        <tr>
+                            <td>Granizado</td>
+                        </tr>
+                        <tr>
+                            <td>Crema Flan</td>
+                        </tr>
+                        <tr>
+                            <td>Tiramisu</td>
+                        </tr>
+                        <tr>
+                            <td>Mascarpone</td>
+                        </tr>
+                        <tr>
+                            <td>Frutos del bosque</td>
+                        </tr>
+                        <tr>
+                            <td>Sambayon</td>
+                        </tr>
+                        <tr>
+                            <td>Menta Granizada</td>
+                        </tr>
+                        <tr>
+                            <td>Crema Rusa</td>
+                        </tr>
+                        <tr>
+                            <td>Nutella</td>
+                        </tr>
+                        <tr>
+                            <td>Mantecol</td>
+                        </tr>
+                    </tbody>
                     </table>
                     <table border="3" cellpadding="5" cellspacing="10" class="tablaCh tabla--activo">
                         <thead>
@@ -229,58 +323,61 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
-            </div>
+                </div> -->
+            </section>
             <!-- 3ra sección: Local y tiene un Iframe -->
-            <div class="local">
-                <h2>LOCAL</h2>
+            <section class="local container-fluid">
+                <h2 class="mt-5">SUCURSAL</h2>
                 <!-- Dirección del Local junto con mapa -->
-                <div class="local__ubicacion">
-                    <p><strong>Quilmes Oeste</strong>
+                <div class="local__ubicacion d-flex justify-content-around align-items-center w-100 mb-5 mt-5">
+                    <p class="local--activo mb-5 mt-5"><strong>Quilmes Oeste</strong>
+                        <br>
                         <br>
                         Av, Rodolfo Lopez 3611, Quilmes
                         <br>
-                        11-1111-1111
+                        11-2345-6789
                     </p>
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2757.0459305415434!2d-58.29707719154845!3d-34.73798994070406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32dc1342d4f37%3A0x6246737ec9ec7379!2sRodolfo%20L%C3%B3pez%203611%2C%20Quilmes%20Oeste%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1638582867133!5m2!1ses-419!2sar"
-                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.7124363856333!2d-58.301336984683886!3d-34.73764217210371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32dc1342d4f37%3A0x6246737ec9ec7379!2sRodolfo%20L%C3%B3pez%203611%2C%20Quilmes%20Oeste%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1644291035719!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-            </div>
+            </section>
             <!-- 4ta sección: Contacto y posee un formulario -->
-            <div class="contacto">
-                <h2>CONTACTO</h2>
-                <p>Ingrese aquí sus datos, su consulta y nos contactaremos a la brevedad.
+            <section class="contacto">
+                <h2 class="mt-5">CONTACTO</h2>
+                <p class="mb-5 mt-5 w-50">Ingrese aquí sus datos, su consulta y nos contactaremos a la brevedad.
                 </p>
                 <!-- Formulario de Contacto -->
                 <form action="#" method="GET" class="contacto__form">
                     <div class="contacto__form-row">
                         <div class="contacto__form-column">
                             <input type="text" placeholder="Ingresá tu nombre y apellido" name="Dato1"
-                                label="enviar-nombre" required class="contacto__form-input">
+                                label="enviar-nombre" required class="contacto__form-input contacto__form--activo">
 
                             <input type="email" placeholder="Ingresá tu mail" name="Mail" required
-                                class="contacto__form-input">
+                                class="contacto__form-input contacto__form--activo">
 
                             <input type="tel" placeholder="Ingresá tu nro" name="Telefono" required
-                                class="contacto__form-input">
+                                class="contacto__form-input contacto__form--activo">
 
-                            <input type="text" placeholder="Asunto" name="Dato2" required class="contacto__form-input">
+                            <input type="text" placeholder="Asunto" name="Dato2" required
+                                class="contacto__form-input contacto__form--activo">
                         </div>
                         <div class="contacto__form">
                             <textarea placeholder="Ingresa tu consulta" name="Consulta" cols="30" rows="10" required
-                                class="contacto__form-text"></textarea>
+                                class="contacto__form-text contacto__form--activo"></textarea>
                         </div>
                     </div>
                     <div>
-                        <p>Acepta términos y condiciones?</p>
-                        <input type="checkbox" name="Acepta" value="SI" class="contacto__form-sub">
+                        <p class="mb-5 mt-5">Acepta términos y condiciones?</p>
+                        <input type="checkbox" name="Acepta" value="SI"
+                            class="contacto__form-sub contacto__form--activo">
                     </div>
                     <div>
-                        <input type="submit" value="ENVIAR" class="contacto__form-sub">
+                        <input type="submit" value="ENVIAR" class="contacto__form-sub contacto__form--activo">
                     </div>
                 </form>
-            </div>
+            </section>
         </main>
         <footer>
             <!-- Aquí comienza el pie de página donde estan los links de RRSS -->
@@ -290,15 +387,20 @@
                     <ul>
                         <li class="animate__animated animate__rubberBand"><a
                                 href="https://www.facebook.com/pages/category/Product-Service/Piace-Heladeria-109135280913624/"
-                                target="_blank"><i class="fab fa-facebook-square" alt="Facebook"></i></a></li>
+                                target="_blank"><i class="fab fa-facebook red--facebook" alt="Facebook"></i></a>
+                        </li>
                         <li class="animate__animated animate__rubberBand"><a
                                 href="https://www.instagram.com/piaceheladeria/?hl=es" target="_blank"><i
-                                    class="fab fa-instagram" alt="Instagram"></i></a></li>
+                                    class="fab fa-instagram red--instagram" alt="Instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
         </footer>
     </div>
+    <!-- LINK DE JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

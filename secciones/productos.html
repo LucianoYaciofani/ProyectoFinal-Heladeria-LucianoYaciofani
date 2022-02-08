@@ -1,37 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link Externo de Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- SEO -->
+    <meta name="keywords"
+        content="helado, heladeria, sabor artesanal, productos, sabores, cremas, Italia, Argentina, helado artesanal, chocolate, vainilla, frutilla, granizado, frutas al agua">
+    <meta name="description"
+        content="Página de la sección 'Productos' de la heladeria Piace donde podrán ver sabores que vendemos.">
     <!-- Link FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- Link de Animate Style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- LINK DE CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Link del estilo de CSS -->
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- Icono pequeño -->
-    <link rel="shortcut icon" href="./img/portada1a.png">
+    <link rel="shortcut icon" href="../img/logocircular.png">
     <!-- Titulo Pestaña Navegador -->
-    <title>Heladeria Piace</title>
+    <title>Piace -- Productos</title>
 </head>
 
 <body>
     <div class="grilla">
-        <!-- Encabezado con lista no ordenadas de las secciones -->
         <header>
             <div class="header">
                 <img src="../img/logocircular.png" alt="Logo">
                 <!-- Menú navegación -->
                 <nav class="nav__links">
                     <!-- Secciones -->
-                    <ul>
+                    <ul class="fw-bold h4 list-unstyled">
                         <li class="animate__animated animate__bounce"><a class="nav__links--activo"
                                 href="../index.html">Home</a>
                         </li>
@@ -52,13 +55,15 @@
             </div>
         </header>
         <main>
+            <!-- 2da sección: Productos y se agrega una tabla -->
             <!-- Fondo Producto -->
-            <div class="productos">
-                <h2>PRODUCTOS</h2>
+            <section class="productos container-fluid">
+                <h2 class="display-5 fw-bold mt-5">PRODUCTOS</h2>
                 <!-- Sección Productos -->
-                <p>Nuestros productos están elaborados con la mejor calidad.</p>
+                <p class="mt-5 mb-5">Nuestros productos están elaborados de manera artesanal con la mejor materia prima.
+                </p>
                 <!-- Tablas con Productos -->
-                <div class="productos__tablas">
+                <div class="productos__tablas mt-5 mb-5 w-100">
                     <table border="3" cellpadding="5" cellspacing="10" class="tablaCrem tabla--activo">
                         <thead>
                             <tr>
@@ -201,8 +206,9 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
+            </section>
         </main>
+        <!-- Aquí comienza el pie de página donde estan los links de RRSS -->
         <footer>
             <!-- Aquí comienza el pie de página donde estan los links de RRSS -->
             <div class="footer">
@@ -211,15 +217,20 @@
                     <ul>
                         <li class="animate__animated animate__rubberBand"><a
                                 href="https://www.facebook.com/pages/category/Product-Service/Piace-Heladeria-109135280913624/"
-                                target="_blank"><i class="fab fa-facebook-square" alt="Facebook"></i></a></li>
+                                target="_blank"><i class="fab fa-facebook-square red--facebook" alt="Facebook"></i></a>
+                        </li>
                         <li class="animate__animated animate__rubberBand"><a
                                 href="https://www.instagram.com/piaceheladeria/?hl=es" target="_blank"><i
-                                    class="fab fa-instagram" alt="Instagram"></i></a></li>
+                                    class="fab fa-instagram red--instagram" alt="Instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
         </footer>
     </div>
+    <!-- LINK DE JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

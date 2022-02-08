@@ -1,0 +1,31 @@
+//MIXIN LIKE A PRO
+@mixin estilosParrafo ($color, $tamanio, $peso, $altura, $ancho) {
+    color: $color;
+    font-size: $tamanio;
+    font-weight: $peso;
+    line-height: $altura;
+    width: $ancho;
+}
+
+//MIXIN LIKE A PRO
+@mixin estilosForm ($color, $tamanio, $margin, $padding, $border, $fondo, $radio, $ancho) {
+    color: $color;
+    font-size: $tamanio;
+    margin-top: $margin;
+    padding: $padding;
+    border: $border;
+    background-color: $fondo;
+    border-radius: $radio;
+    width: $ancho;
+}
+
+//MIXIN LIKE A PRO
+@mixin grilla ($flex, $columna, $centro, $center, $color) {
+    display: $flex;
+    flex-direction: $columna;
+    text-align: $centro;
+    align-items: $center;
+    color: $color;
+
+
+}

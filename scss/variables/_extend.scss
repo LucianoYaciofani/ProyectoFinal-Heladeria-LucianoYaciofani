@@ -1,0 +1,18 @@
+// EXTEND
+
+%estilosParrafo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 30px;
+}
+
+%estilosForm {
+    color: $marron;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: double;
+    border-bottom: solid 1px;
+    font-size: 1rem;
+    background-color: #FFEEAD;
+    border-radius: 0.5rem;
+}

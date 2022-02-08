@@ -1,0 +1,34 @@
+//MAPS + EACH (bucle)
+
+// Declaramos nuestro mapa con los valores de las 4 redes que queremos usar
+$redes: (instagram: white,
+    facebook: #3b5998,
+);
+
+@each $red,
+$color in $redes {
+    .red--#{$red} {
+        color: $color;
+
+        @if ($color==white) {
+            background-color: #d6249f;
+        }
+
+        @else {
+            background-color: white;
+        }
+    }
+}
+
+
+// MAP-GET
+$estiloForm: (colorr: $marron,
+    ancho: 65%,
+    bordes: double,
+    bordeAbajo: solid 1px,
+    tamanio: 1rem,
+    margenAbajo: 2rem,
+    borde: 0.5rem,
+    peso: 600,
+    fondo: $amarillo,
+);

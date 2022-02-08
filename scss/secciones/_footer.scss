@@ -1,0 +1,96 @@
+/* SECCIONES */
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    color: $celeste;
+    /*background: $fondoFooter;
+    background: radial-gradient(circle, rgba(249, 248, 243, 1) 0%, rgba(240, 193, 123, 1) 100%);*/
+    background-color: $fondoFooter;
+
+    /* PIE DE PÁGINA */
+    p {
+        font-size: 1.2rem;
+        margin-left: 30px;
+        display: flex;
+        color: black;
+    }
+
+    /* MENU - NAV */
+    .footer__links ul {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        list-style: none;
+        margin-right: 20px;
+    }
+
+    /* MENU - LISTAS */
+    li {
+        margin: 10px;
+        padding: 10px;
+        font-weight: bold;
+        list-style: none;
+    }
+}
+
+/* LINK - FACEBOOK CON LOGO*/
+.fa-facebook {
+    font-size: 3rem;
+    border-radius: 2.5rem;
+}
+
+/* LINK - INSTAGRAM CON LOGO */
+.fa-instagram {
+    font-size: 3rem;
+    border-radius: 5rem;
+}
+
+/*
+PASO 1: Definir estrategia --> MOBILE LAST
+PASO 2: Escribir media querys --> MAX WIDTH y BREAKPOINTS
+PASO 3: Codear condiciones
+
+Media Querys */
+
+/* Si como minimo tengo 768px de ancho.... */
+@media (max-width: 768px) {
+
+    /* SECCIONES */
+    .footer {
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #5d4037;
+        border-top: double;
+        background: rgb(240, 193, 123);
+        background: radial-gradient(circle, rgba(240, 193, 123, 1) 0%, rgba(249, 248, 243, 1) 100%);
+
+        /* PIE DE PÁGINA */
+        p {
+            font-size: 1.2rem;
+            color: black;
+            margin-top: 2rem;
+        }
+
+        /* MENU - NAV */
+        .footer__links ul {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            list-style: none;
+            margin-right: 20px;
+        }
+
+        /* MENU - LISTAS */
+        .footer__links li {
+            margin: 10px;
+            padding: 10px;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+/* GRID */
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header"
+        "nosotros"
+        "productos"
+        "locall"
+        "contacto"
+        "footer";
+}
+
+/*
+PASO 1: Definir estrategia --> MOBILE LAST
+PASO 2: Escribir media querys --> MAX WIDTH y BREAKPOINTS
+PASO 3: Codear condiciones
+
+Media Querys */
+
+/* Si como minimo tengo 768px de ancho.... */
+@media (max-width: 768px) {
+    .grilla {
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "nosotros"
+            "productos"
+            "locall"
+            "contacto"
+            "footer";
+    }
+}

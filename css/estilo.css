@@ -1,0 +1,829 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Quicksand&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+Importacion de fuentes de Google Font
+*/
+.contacto .contacto__form .contacto__form-input,
+.contacto .contacto__form .contacto__form-text,
+.contacto .contacto__form .contacto__form-sub {
+    color: #7f5539;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: double;
+    border-bottom: solid 1px;
+    font-size: 1rem;
+    background-color: #FFEEAD;
+    border-radius: 0.5rem;
+}
+
+.red--instagram {
+    color: white;
+    background-color: #d6249f;
+}
+
+.red--facebook {
+    color: #3b5998;
+    background-color: white;
+}
+
+/* GRID */
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header"
+        "nosotros"
+        "productos"
+        "locall"
+        "contacto"
+        "footer";
+}
+
+/*
+PASO 1: Definir estrategia --> MOBILE LAST
+PASO 2: Escribir media querys --> MAX WIDTH y BREAKPOINTS
+PASO 3: Codear condiciones
+
+Media Querys */
+/* Si como minimo tengo 768px de ancho.... */
+@media (max-width: 768px) {
+    .grilla {
+        grid-template-rows: auto;
+        grid-template-areas: "header"
+            "nosotros"
+            "productos"
+            "locall"
+            "contacto"
+            "footer";
+    }
+}
+
+/*
+IMPORTO LAS SECCIONES
+*/
+header {
+    /*background: rgb(249, 248, 243);
+    background: linear-gradient(0deg, rgba(249, 248, 243, 1) 0%, rgba(240, 193, 123, 1) 100%);*/
+    background-color: #96CEB4;
+    /* SECCIONES */
+    /* MENU - NAV */
+    /*
+PASO 1: Definir estrategia --> MOBILE LAST
+PASO 2: Escribir media querys --> MAX WIDTH y BREAKPOINTS
+PASO 3: Codear condiciones
+
+Media Querys */
+    /* Si como minimo tengo 768px de ancho.... */
+}
+
+header .header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #96CEB4;
+    /* LOGO */
+}
+
+header .header a img {
+    position: fixed;
+    width: 10%;
+    height: auto;
+    left: 1%;
+    top: 2%;
+}
+
+header .nav__links ul {
+    display: flex;
+    margin-right: 50px;
+    /* MENU - LISTAS */
+    /* LINKS */
+    /* MAYUSCULAS EN MENU  */
+}
+
+header .nav__links ul li {
+    margin: 10px;
+    padding: 10px;
+}
+
+header .nav__links ul li a {
+    color: #FFEEAD;
+    text-decoration: none;
+}
+
+header .nav__links ul .nav__links--activo:hover {
+    color: #D9534F;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    header {
+        /* ENCABEZADO */
+    }
+
+    header header {
+        background: #f0c17b;
+        background: radial-gradient(circle, #f9f8f3 0%, #f0c17b 100%);
+        /* HEADER */
+    }
+
+    header header .header {
+        display: flex;
+        list-style: none;
+        background: #f0c17b;
+        background: radial-gradient(circle, #f9f8f3 0%, #f0c17b 100%);
+        /* MENU - NAV */
+        /* LINKS */
+        /* MAYUSCULAS EN MENU  */
+    }
+
+    header header .header .nav__links ul {
+        display: inline;
+        margin-right: 10rem;
+    }
+
+    header header .header .nav__links li a {
+        color: #8c9eff;
+        /* text-decoration: none; */
+    }
+
+    header header .header .nav__links--activo:hover {
+        color: #7f5539;
+        text-transform: uppercase;
+        transition-duration: 2s;
+    }
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* SECCIONES */
+.nosotros {
+    grid-area: nosotros;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: #FFEEAD;
+    /* ANCHO CARROUSEL PPAL */
+    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+}
+
+.nosotros h1 {
+    font-family: "Satisfy", cursive;
+    font-style: italic;
+    font-font-size: 6rem;
+    color: black;
+    font-size: 6rem;
+    font-weight: 100;
+    line-height: 70px;
+    width: 80%;
+}
+
+.nosotros h1 .otraLetra {
+    font-family: "Roboto Slab", serif;
+    font-style: initial;
+    font-size: 2rem;
+    letter-spacing: 10px;
+}
+
+.nosotros h2 {
+    font-family: "Bebas Neue", cursive;
+    color: #D9534F;
+    font-size: 5rem;
+    font-weight: 100;
+    line-height: 100px;
+    width: 80%;
+    letter-spacing: 4px;
+}
+
+.nosotros .alto {
+    height: 100vh;
+    /* IMAGENES DEL CARROUSEL */
+}
+
+.nosotros .alto img {
+    position: relative;
+    width: 100vw;
+    bottom: 350px;
+    z-index: -1;
+}
+
+.nosotros .alto .cucurucho {
+    position: relative;
+    top: 100px;
+    z-index: -1;
+}
+
+.nosotros p {
+    color: #666666;
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 30px;
+    width: 80%;
+    /* TEXTO SELECCIONADO */
+}
+
+.nosotros p span {
+    font-weight: 600;
+    font-size: larger;
+    color: #4b4a4a;
+}
+
+.nosotros p:hover {
+    background-color: #96CEB4;
+    color: #666666;
+    transition-duration: 2s;
+    padding: 1rem;
+    border: double;
+    border-radius: 0.5rem;
+    width: 80%;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas: "titulo titulo titulo titulo"
+        "prod1 prod2 prod3 prod4";
+    grid-area: section2;
+    color: #FFEEAD;
+    border-top: solid;
+    background-image: url(/img/local25.jpg);
+    background-size: cover;
+}
+
+.titulo {
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+}
+
+.titulo h2 {
+    font-family: "Bebas Neue", cursive;
+    color: #D9534F;
+    font-size: 5rem;
+    font-weight: 100;
+    line-height: 100px;
+    width: 80%;
+    letter-spacing: 4px;
+}
+
+.titulo p {
+    color: #666666;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 30px;
+    width: 80%;
+    background-color: #F0EDDC;
+    border: double;
+    border-radius: 0.5rem;
+    /* TEXTO SELECCIONADO */
+}
+
+.titulo p:hover {
+    background-color: #F0EDDC;
+    color: #666666;
+    transition-duration: 2s;
+    border: double;
+    border-radius: 0.5rem;
+    width: 90%;
+}
+
+.prod1,
+.prod2,
+.prod3,
+.prod4 {
+    grid-area: prod1, prod2, prod3, prod4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* LISTAS */
+}
+
+.prod1 p,
+.prod2 p,
+.prod3 p,
+.prod4 p {
+    color: #7f5539;
+    font-size: 1.2rem;
+    font-weight: 900;
+    line-height: 30px;
+    width: 100%;
+    background-color: #F0EDDC;
+    border: double;
+    border-radius: 0.5rem;
+    /* TEXTO SELECCIONADO */
+}
+
+.prod1 p:hover,
+.prod2 p:hover,
+.prod3 p:hover,
+.prod4 p:hover {
+    background-color: #7f5539;
+    color: #FFEEAD;
+    transition-duration: 2s;
+    border: double;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.prod1 li,
+.prod2 li,
+.prod3 li,
+.prod4 li {
+    list-style: none;
+    color: #666666;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 40px;
+    width: 100%;
+    background-color: #F0EDDC;
+    border: double;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.prod1 li:hover,
+.prod2 li:hover,
+.prod3 li:hover,
+.prod4 li:hover {
+    background-color: #7f5539;
+    color: #FFEEAD;
+    transition-duration: 2s;
+    border: double;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+/* SECCIONES */
+.local {
+    grid-area: locall;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: #FFEEAD;
+    border-top: double;
+    background-color: #96CEB4;
+    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+    /* LOCAL SELECCIONADO */
+    /* INFORMACIÓN DE SECCIÓN */
+}
+
+.local h2 {
+    font-family: "Bebas Neue", cursive;
+    color: #D9534F;
+    font-size: 5rem;
+    font-weight: 100;
+    line-height: 100px;
+    width: 80%;
+    letter-spacing: 4px;
+}
+
+.local p {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 30px;
+    width: 30%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: double;
+    border-radius: 0.5rem;
+    background-color: #F0EDDC;
+}
+
+.local .local--activo:hover {
+    background-color: #7f5539;
+    color: #FFEEAD;
+    transition-duration: 2s;
+}
+
+.local .local iframe {
+    display: flex;
+}
+
+/* SECCIONES */
+.contacto {
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: #FFEEAD;
+    border-top: double;
+    background-color: #F0EDDC;
+    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+    /* FORMULARIO */
+}
+
+.contacto h2 {
+    font-family: "Bebas Neue", cursive;
+    color: #D9534F;
+    font-size: 5rem;
+    font-weight: 100;
+    line-height: 100px;
+    width: 80%;
+    letter-spacing: 4px;
+}
+
+.contacto p {
+    color: #666666;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 30px;
+    width: 100%;
+    /* TEXTO SELECCIONADO */
+}
+
+.contacto p:hover {
+    background-color: #7f5539;
+    color: #FFEEAD;
+    transition-duration: 2s;
+    border: double;
+    border-radius: 0.5rem;
+}
+
+.contacto .contacto__form {
+    width: 80%;
+    /* FORMULARIO-INPUT */
+    /* FORMULARIO-TEXTO */
+    /* FORMULARIO-SUBMIT */
+    /* FORMULARIO SELECCIONADO */
+}
+
+.contacto .contacto__form .contacto__form-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contacto .contacto__form .contacto__form-input {
+    width: 80%;
+}
+
+.contacto .contacto__form .contacto__form-text {
+    width: 80%;
+}
+
+.contacto .contacto__form .contacto__form-sub {
+    width: 60%;
+    margin-bottom: 4rem;
+    font-weight: 600;
+}
+
+.contacto .contacto__form .contacto__form--activo:hover {
+    background-color: #7f5539;
+    color: #FFEEAD;
+    transition-duration: 2s;
+}
+
+/*
+PASO 1: Definir estrategia --> MOBILE LAST
+PASO 2: Escribir media querys --> MAX WIDTH y BREAKPOINTS
+PASO 3: Codear condiciones
+
+Media Querys */
+/* Si como minimo tengo 768px de ancho.... */
+@media (max-width: 768px) {
+
+    /* SECCIONES */
+    .nosotros {
+        grid-area: nosotros;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        color: #FFEEAD;
+        border-top: double;
+        background-color: #8c9eff;
+        /* ANCHO CARROUSEL PPAL */
+    }
+
+    .nosotros .ancho {
+        width: 90%;
+        text-align: center;
+        align-items: center;
+        /* IMAGENES DEL CARROUSEL */
+        /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+    }
+
+    .nosotros .ancho img {
+        height: 70vh;
+        width: 100%;
+    }
+
+    .nosotros .ancho p {
+        color: #f1f8e9;
+        font-size: 1.5rem;
+        font-weight: 900;
+        line-height: 30px;
+        width: 80%;
+        margin-bottom: 2rem;
+        /* TEXTO SELECCIONADO */
+    }
+
+    .nosotros .ancho p:hover {
+        background-color: #7f5539;
+        color: #f1f8e9;
+        transition-duration: 2s;
+    }
+
+    /* SECCIONES */
+    .productos {
+        color: #7f5539;
+        border-top: double;
+        background-position: center;
+        background-size: cover;
+        /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+        /* TABLAS DE SABORES*/
+    }
+
+    .productos p {
+        color: #7f5539;
+        font-size: 1.5rem;
+        font-weight: 900;
+        line-height: 30px;
+        width: 80%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        /* TEXTO SELECCIONADO */
+    }
+
+    .productos p:hover {
+        background-color: #7f5539;
+        color: #FFEEAD;
+        transition-duration: 2s;
+    }
+
+    .productos .productos__tablas {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        width: 90%;
+        margin-bottom: 4rem;
+        align-items: center;
+        /* TABLA DE SABORES*/
+    }
+
+    .productos .productos__tablas table {
+        width: 60%;
+        background-color: #FFEEAD;
+        color: #8c9eff;
+        border-radius: 0.5rem;
+        margin-bottom: 4rem;
+        /* TABLA SELECCIONADA */
+    }
+
+    .productos .productos__tablas table:hover {
+        background-color: #7f5539;
+        color: #FFEEAD;
+        transition-duration: 2s;
+    }
+
+    /* SECCIONES */
+    .local {
+        color: #7f5539;
+        border-top: double;
+        background-position: center;
+        background-size: cover;
+        /* INFORMACIÓN DE SECCIÓN */
+        /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+        /* LOCAL SELECCIONADO */
+        /* INFORMACIÓN DE SECCIÓN */
+    }
+
+    .local .local__ubicacion {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .local p {
+        color: #8c9eff;
+        font-size: 1.5rem;
+        font-weight: 900;
+        line-height: 30px;
+        width: 60%;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        border: double;
+        border-radius: 0.5rem;
+        background-color: #FFEEAD;
+    }
+
+    .local .local--activo:hover {
+        background-color: #7f5539;
+        color: #FFEEAD;
+        transition-duration: 2s;
+    }
+
+    .local .local iframe {
+        display: flex;
+    }
+
+    /* SECCIONES */
+    .contacto {
+        background-color: #8c9eff;
+        color: #7f5539;
+        border-top: double;
+        /* TITULO SECCIÓN */
+        /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+        /* FORMULARIO */
+    }
+
+    .contacto h2 {
+        color: #f1f8e9;
+    }
+
+    .contacto p {
+        color: #7f5539;
+        font-size: 1.5rem;
+        font-weight: 900;
+        line-height: 30px;
+        width: 90%;
+        margin-top: 2rem;
+        /* TEXTO SELECCIONADO */
+    }
+
+    .contacto p:hover {
+        background-color: #7f5539;
+        color: #f1f8e9;
+        transition-duration: 2s;
+    }
+
+    .contacto .contacto__form {
+        width: 80%;
+        /* FORMULARIO-INPUT */
+        /* FORMULARIO-TEXTO */
+        /* FORMULARIO-SUBMIT -- MAP-GET*/
+    }
+
+    .contacto .contacto__form .contacto__form-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto .contacto__form .contacto__form-input {
+        color: #7f5539;
+        font-size: 1rem;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        border: double;
+        background-color: #FFEEAD;
+        border-radius: 0.5rem;
+        width: 60%;
+        border-bottom: solid 1px;
+    }
+
+    .contacto .contacto__form .contacto__form-text {
+        color: #7f5539;
+        font-size: 1rem;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        border: double;
+        background-color: #FFEEAD;
+        border-radius: 0.5rem;
+        width: 75%;
+        border-bottom: solid 1px;
+    }
+
+    .contacto .contacto__form .contacto__form-sub {
+        color: #7f5539;
+        width: 65%;
+        border: double;
+        border-bottom: solid 1px;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        background-color: #FFEEAD;
+    }
+
+    .contacto .contacto__form .contacto__form--activo:hover {
+        background-color: #7f5539;
+        color: #FFEEAD;
+        transition-duration: 2s;
+    }
+}
+
+/* SECCIONES */
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    color: #8c9eff;
+    /*background: $fondoFooter;
+    background: radial-gradient(circle, rgba(249, 248, 243, 1) 0%, rgba(240, 193, 123, 1) 100%);*/
+    background-color: #FFAD60;
+    /* PIE DE PÁGINA */
+    /* MENU - NAV */
+    /* MENU - LISTAS */
+}
+
+.footer p {
+    font-size: 1.2rem;
+    margin-left: 30px;
+    display: flex;
+    color: black;
+}
+
+.footer .footer__links ul {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.footer li {
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    list-style: none;
+}
+
+/* LINK - FACEBOOK CON LOGO*/
+.fa-facebook {
+    font-size: 3rem;
+    border-radius: 2.5rem;
+}
+
+/* LINK - INSTAGRAM CON LOGO */
+.fa-instagram {
+    font-size: 3rem;
+    border-radius: 5rem;
+}
+
+/*
+PASO 1: Definir estrategia --> MOBILE LAST
+PASO 2: Escribir media querys --> MAX WIDTH y BREAKPOINTS
+PASO 3: Codear condiciones
+
+Media Querys */
+/* Si como minimo tengo 768px de ancho.... */
+@media (max-width: 768px) {
+
+    /* SECCIONES */
+    .footer {
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #5d4037;
+        border-top: double;
+        background: #f0c17b;
+        background: radial-gradient(circle, #f0c17b 0%, #f9f8f3 100%);
+        /* PIE DE PÁGINA */
+        /* MENU - NAV */
+        /* MENU - LISTAS */
+    }
+
+    .footer p {
+        font-size: 1.2rem;
+        color: black;
+        margin-top: 2rem;
+    }
+
+    .footer .footer__links ul {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        list-style: none;
+        margin-right: 20px;
+    }
+
+    .footer .footer__links li {
+        margin: 10px;
+        padding: 10px;
+        font-weight: bold;
+    }
+}

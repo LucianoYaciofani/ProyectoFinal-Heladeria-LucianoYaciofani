@@ -72,15 +72,6 @@ body {
             // LLAMO AL MIXIN PRO REALIZADO
             @include estilosParrafo($letra, 1.5rem, 100, 30px, 80%);
 
-            /*span {
-                font: {
-                    weight: 600;
-                    size: larger;
-                }
-
-                color: #4b4a4a;
-            }*/
-
             /* TEXTO SELECCIONADO */
             &:hover {
                 background-color: $verde;
@@ -93,8 +84,6 @@ body {
             }
         }
     }
-
-
 }
 
 .productos {
@@ -238,8 +227,8 @@ body {
     }
 }
 
-.fondo {
-    background-color: white;
+.fondocono {
+    background-image: url(/img/conomult.jpg);
 }
 
 /* SECCIONES */
@@ -248,6 +237,10 @@ body {
     @include grilla (flex, column, center, center, $amarillo);
     border-top: double;
     background-color: $fondo;
+    background-image: url(/img/cucuruchofrutilla.png);
+    background-repeat: no-repeat;
+    background-position: -3rem;
+
 
     // TITULO DE LA SECCION    
     h2 {
@@ -274,7 +267,7 @@ body {
 
     /* FORMULARIO */
     .contacto__form {
-        width: 80%;
+        width: 70%;
 
         .contacto__form-row {
             display: flex;
@@ -284,13 +277,14 @@ body {
 
         /* FORMULARIO-INPUT */
         .contacto__form-input {
-            width: 80%;
+            width: 60%;
+            align-items: center;
             @extend %estilosForm;
         }
 
         /* FORMULARIO-TEXTO */
         .contacto__form-text {
-            width: 80%;
+            width: 100%;
             @extend %estilosForm;
         }
 

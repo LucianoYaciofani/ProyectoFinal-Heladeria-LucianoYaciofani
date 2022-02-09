@@ -197,14 +197,6 @@ body {
       font-weight: 100;
       line-height: 30px;
       width: 80%;
-      /*span {
-                font: {
-                    weight: 600;
-                    size: larger;
-                }
-
-                color: #4b4a4a;
-            }*/
       /* TEXTO SELECCIONADO */ }
       .nosotros .fondocono p:hover {
         background-color: #96CEB4;
@@ -362,8 +354,8 @@ body {
     border: double;
     border-radius: 0.5rem; }
 
-.fondo {
-  background-color: white; }
+.fondocono {
+  background-image: url(/img/conomult.jpg); }
 
 /* SECCIONES */
 .contacto {
@@ -375,6 +367,9 @@ body {
   color: #FFEEAD;
   border-top: double;
   background-color: #F0EDDC;
+  background-image: url(/img/cucuruchofrutilla.png);
+  background-repeat: no-repeat;
+  background-position: -3rem;
   /* PARRAFO PRINCIPAL DE LA SECCIÓN */
   /* FORMULARIO */ }
   .contacto h2 {
@@ -399,7 +394,7 @@ body {
       border: double;
       border-radius: 0.5rem; }
   .contacto .contacto__form {
-    width: 80%;
+    width: 70%;
     /* FORMULARIO-INPUT */
     /* FORMULARIO-TEXTO */
     /* FORMULARIO-SUBMIT */
@@ -409,9 +404,10 @@ body {
       flex-direction: row;
       align-items: center; }
     .contacto .contacto__form .contacto__form-input {
-      width: 80%; }
+      width: 60%;
+      align-items: center; }
     .contacto .contacto__form .contacto__form-text {
-      width: 80%; }
+      width: 100%; }
     .contacto .contacto__form .contacto__form-sub {
       width: 60%;
       margin-bottom: 4rem;
@@ -607,7 +603,6 @@ Media Querys */
   align-items: center;
   flex-direction: row;
   align-content: center;
-  color: #8c9eff;
   /*background: $fondoFooter;
     background: radial-gradient(circle, rgba(249, 248, 243, 1) 0%, rgba(240, 193, 123, 1) 100%);*/
   background-color: #FFAD60;

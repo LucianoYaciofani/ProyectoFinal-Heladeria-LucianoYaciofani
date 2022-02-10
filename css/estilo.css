@@ -108,10 +108,8 @@ Media Querys */
     header .header {
       grid-area: header;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      flex-direction: column;
-      align-content: center;
+      flex-direction: row;
       margin-top: 2rem;
       margin-bottom: 2rem;
       color: #96CEB4;
@@ -120,11 +118,8 @@ Media Querys */
       /* LINKS */
       /* MAYUSCULAS EN MENU  */ }
       header .header a img {
-        height: auto;
         position: relative;
-        width: 10%;
-        left: 1%;
-        top: 10%; }
+        width: 50%; }
       header .header .nav__links ul {
         display: inline;
         margin-right: 10rem; }
@@ -215,7 +210,7 @@ body {
   grid-template-rows: auto;
   gap: 0px 0px;
   grid-template-areas: "titulo titulo titulo titulo" "prod1 prod2 prod3 prod4";
-  grid-area: section2;
+  grid-area: productos;
   color: #FFEEAD;
   border-top: solid;
   background-image: url(/img/local25.jpg);
@@ -322,11 +317,8 @@ body {
   align-items: center;
   color: #FFEEAD;
   border-top: double;
-  background-image: url(/img/conomult.jpg);
-  /* PARRAFO PRINCIPAL DE LA SECCIÓN */
-  /* LOCAL SELECCIONADO */
-  /* INFORMACIÓN DE SECCIÓN */ }
-  .local h2 {
+  background-image: url(/img/conomult.jpg); }
+  .local backgr h2 {
     font-family: "Bebas Neue", cursive;
     color: #D9534F;
     font-size: 5rem;
@@ -334,26 +326,34 @@ body {
     line-height: 100px;
     width: 80%;
     letter-spacing: 4px; }
-  .local p {
-    color: black;
-    font-size: 1.5rem;
-    font-weight: 900;
-    line-height: 30px;
-    width: 30%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border: double;
-    border-radius: 0.5rem;
-    background-color: #F0EDDC; }
-  .local .local--activo:hover {
-    background-color: #7f5539;
-    color: #FFEEAD;
-    transition-duration: 2s; }
-  .local .local iframe {
-    display: flex; }
-  .local .borde {
-    border: double;
-    border-radius: 0.5rem; }
+  .local .local__ubicacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+    /* LOCAL SELECCIONADO */
+    /* INFORMACIÓN DE SECCIÓN */ }
+    .local .local__ubicacion p {
+      color: black;
+      font-size: 1.5rem;
+      font-weight: 900;
+      line-height: 30px;
+      width: 30%;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border: double;
+      border-radius: 0.5rem;
+      background-color: #F0EDDC; }
+    .local .local__ubicacion .local--activo:hover {
+      background-color: #7f5539;
+      color: #FFEEAD;
+      transition-duration: 2s; }
+    .local .local__ubicacion .local iframe {
+      display: flex; }
+    .local .local__ubicacion .borde {
+      border: double;
+      border-radius: 0.5rem; }
 
 /* SECCIONES */
 .contacto {
@@ -429,150 +429,174 @@ Media Querys */
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
-    color: #FFEEAD;
-    border-top: double;
+    padding: 0px;
     /* ANCHO CARROUSEL PPAL */ }
-    .nosotros .ancho {
-      width: 90%;
-      text-align: center;
+    .nosotros h1 {
+      font-family: "Satisfy", cursive;
+      font-style: italic;
+      font-font-size: 6rem;
+      color: black;
+      font-size: 6rem;
+      font-weight: 100;
+      line-height: 70px;
+      width: 80%; }
+      .nosotros h1 .otraLetra {
+        font-family: "Roboto Slab", serif;
+        font-style: initial;
+        font-size: 2rem;
+        letter-spacing: 10px; }
+    .nosotros .alto {
+      height: 100vh;
+      /* IMAGENES DEL CARROUSEL */ }
+      .nosotros .alto img {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        bottom: 350px;
+        z-index: -1;
+        padding-bottom: 2rem; }
+      .nosotros .alto .cucurucho {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        top: 100px;
+        z-index: -1; }
+    .nosotros .fondocono {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
       align-items: center;
-      /* IMAGENES DEL CARROUSEL */
+      background-image: url(/img/conomult.jpg);
+      padding-top: 2rem;
       /* PARRAFO PRINCIPAL DE LA SECCIÓN */ }
-      .nosotros .ancho img {
-        height: 70vh;
-        width: 100%; }
-      .nosotros .ancho p {
-        color: #f1f8e9;
+      .nosotros .fondocono h2 {
+        font-family: "Bebas Neue", cursive;
+        color: #D9534F;
+        font-size: 5rem;
+        font-weight: 100;
+        line-height: 100px;
+        width: 80%;
+        letter-spacing: 4px; }
+      .nosotros .fondocono p {
+        color: #666666;
         font-size: 1.5rem;
-        font-weight: 900;
+        font-weight: 100;
         line-height: 30px;
         width: 80%;
-        margin-bottom: 2rem;
         /* TEXTO SELECCIONADO */ }
-        .nosotros .ancho p:hover {
-          background-color: #7f5539;
-          color: #f1f8e9;
-          transition-duration: 2s; }
+        .nosotros .fondocono p:hover {
+          background-color: #96CEB4;
+          color: #666666;
+          transition-duration: 2s;
+          padding: 1rem;
+          border: double;
+          border-radius: 0.5rem;
+          width: 80%; }
   /* SECCIONES */
   .productos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 0px 0px;
-    grid-template-areas: "titulo titulo" "prod1 prod2";
-    grid-area: section2;
+    grid-template-areas: "titulo titulo" "prod1 prod2" "prod3 prod4";
+    grid-area: productos;
     color: #FFEEAD;
     border-top: solid;
     background-image: url(/img/local25.jpg);
     background-size: cover; }
   .titulo {
-    grid-area: titulo; }
-  .prod1 {
-    grid-area: prod1; }
-  .prod2 {
-    grid-area: prod2; }
-  /*
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    gap: 0px 0px;
-    grid-template-areas:
-        "titulo titulo titulo titulo"
-        "prod1 prod2 prod3 prod4";
-    grid-area: section2;
-    color: $amarillo;
-    border-top: solid;
-    background-image: url(/img/local25.jpg);
-    background-size: cover;
-}
-
-.titulo {
     grid-area: titulo;
-    @include grilla (flex, column, center, center, white);
-    justify-content: flex-start;
-
-    // TITULO DE LA SECCION
-    h2 {
-        font-family: $letraTitulos;
-        // LLAMO AL MIXIN PRO REALIZADO
-        @include estilosParrafo($colorado, 5rem, 100, 100px, 80%);
-        letter-spacing: 4px;
-    }
-
-    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
-  /*
-    p {
-        // LLAMO AL MIXIN PRO REALIZADO
-        @include estilosParrafo($letra, 1.5rem, 900, 30px, 80%);
-        background-color: $fondo;
-        border: double;
-        border-radius: 0.5rem;
-
-        /* TEXTO SELECCIONADO */
-  /*
-        &:hover {
-            background-color: $fondo;
-            color: $letra;
-            transition-duration: 2s;
-            border: double;
-            border-radius: 0.5rem;
-            width: 90%;
-        }
-    }
-}
-/*
-.prod1,
-.prod2,
-.prod3,
-.prod4 {
-    grid-area: prod1, prod2, prod3, prod4;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* PARRAFO PRINCIPAL DE LA SECCIÓN */ }
+    .titulo h2 {
+      font-family: "Bebas Neue", cursive;
+      color: #D9534F;
+      font-size: 5rem;
+      font-weight: 100;
+      line-height: 100px;
+      width: 80%;
+      letter-spacing: 4px; }
+    .titulo p {
+      color: #666666;
+      font-size: 1.5rem;
+      font-weight: 900;
+      line-height: 30px;
+      width: 80%;
+      background-color: #F0EDDC;
+      border: double;
+      border-radius: 0.5rem;
+      /* TEXTO SELECCIONADO */ }
+      .titulo p:hover {
+        background-color: #F0EDDC;
+        color: #666666;
+        transition-duration: 2s;
+        border: double;
+        border-radius: 0.5rem;
+        width: 90%; }
+  .prod1,
+  .prod2,
+  .prod3,
+  .prod4 {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-
-    p {
-        // LLAMO AL MIXIN PRO REALIZADO
-        @include estilosParrafo($marron, 1.2rem, 900, 30px, 100%);
-        background-color: $fondo;
+    justify-content: flex-start;
+    align-content: flex-start;
+    /* LISTAS */ }
+    .prod1 p,
+    .prod2 p,
+    .prod3 p,
+    .prod4 p {
+      color: #7f5539;
+      font-size: 1.2rem;
+      font-weight: 900;
+      line-height: 30px;
+      width: 100%;
+      background-color: #F0EDDC;
+      border: double;
+      border-radius: 0.5rem;
+      /* TEXTO SELECCIONADO */ }
+      .prod1 p:hover,
+      .prod2 p:hover,
+      .prod3 p:hover,
+      .prod4 p:hover {
+        background-color: #7f5539;
+        color: #FFEEAD;
+        transition-duration: 2s;
         border: double;
         border-radius: 0.5rem;
-
-        /* TEXTO SELECCIONADO */
-  /*
-        &:hover {
-            background-color: $marron;
-            color: $amarillo;
-            transition-duration: 2s;
-            border: double;
-            border-radius: 0.5rem;
-            width: 100%;
-        }
-    }
-
-    /* LISTAS */
-  /*
-    li {
-        list-style: none;
-        @include estilosParrafo($letra, 1rem, 100, 40px, 100%);
-        background-color: $fondo;
+        width: 100%; }
+    .prod1 ul,
+    .prod2 ul,
+    .prod3 ul,
+    .prod4 ul {
+      padding-left: 0rem; }
+    .prod1 li,
+    .prod2 li,
+    .prod3 li,
+    .prod4 li {
+      list-style: none;
+      color: #666666;
+      font-size: 1rem;
+      font-weight: 100;
+      line-height: 40px;
+      width: 100%;
+      background-color: #F0EDDC;
+      border: double;
+      border-radius: 0.5rem;
+      width: 100%; }
+      .prod1 li:hover,
+      .prod2 li:hover,
+      .prod3 li:hover,
+      .prod4 li:hover {
+        background-color: #7f5539;
+        color: #FFEEAD;
+        transition-duration: 2s;
         border: double;
         border-radius: 0.5rem;
-        width: 100%;
-
-        &:hover {
-            background-color: $marron;
-            color: $amarillo;
-            transition-duration: 2s;
-            border: double;
-            border-radius: 0.5rem;
-            width: 100%;
-        }
-    }
-}
-
-    /* SECCIONES */
+        width: 100%; }
+  /* SECCIONES */
   .local {
     grid-area: locall;
     display: flex;
@@ -610,27 +634,42 @@ Media Querys */
       display: flex; }
   /* SECCIONES */
   .contacto {
-    color: #7f5539;
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-top: double;
-    /* TITULO SECCIÓN */
+    background-color: #F0EDDC;
+    background-image: url(/img/cucuruchofrutilla.png);
+    background-repeat: no-repeat;
+    background-position-y: 1rem;
+    background-position: -3rem;
+    color: #FFEEAD;
     /* PARRAFO PRINCIPAL DE LA SECCIÓN */
     /* FORMULARIO */ }
     .contacto h2 {
-      color: #f1f8e9; }
+      font-family: "Bebas Neue", cursive;
+      color: #D9534F;
+      font-size: 5rem;
+      font-weight: 100;
+      line-height: 100px;
+      width: 80%;
+      letter-spacing: 4px; }
     .contacto p {
-      color: #7f5539;
+      color: #666666;
       font-size: 1.5rem;
-      font-weight: 900;
+      font-weight: 100;
       line-height: 30px;
-      width: 90%;
-      margin-top: 2rem;
+      width: 100%;
       /* TEXTO SELECCIONADO */ }
       .contacto p:hover {
         background-color: #7f5539;
-        color: #f1f8e9;
-        transition-duration: 2s; }
+        color: #FFEEAD;
+        transition-duration: 2s;
+        border: double;
+        border-radius: 0.5rem; }
     .contacto .contacto__form {
-      width: 80%;
+      width: 100%;
       /* FORMULARIO-INPUT */
       /* FORMULARIO-TEXTO */
       /* FORMULARIO-SUBMIT -- MAP-GET*/ }
@@ -646,7 +685,7 @@ Media Querys */
         border: double;
         background-color: #FFEEAD;
         border-radius: 0.5rem;
-        width: 60%;
+        width: 70%;
         border-bottom: solid 1px; }
       .contacto .contacto__form .contacto__form-text {
         color: #7f5539;
@@ -656,7 +695,7 @@ Media Querys */
         border: double;
         background-color: #FFEEAD;
         border-radius: 0.5rem;
-        width: 75%;
+        width: 70%;
         border-bottom: solid 1px; }
       .contacto .contacto__form .contacto__form-sub {
         color: #7f5539;

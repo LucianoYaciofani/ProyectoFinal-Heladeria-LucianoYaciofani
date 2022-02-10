@@ -67,21 +67,16 @@ Media Querys */
         .header {
             grid-area: header;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            flex-direction: column;
-            align-content: center;
+            flex-direction: row;
             margin-top: 2rem;
             margin-bottom: 2rem;
             color: $verde;
 
             /* LOGO */
             a img {
-                height: auto;
                 position: relative;
-                width: 10%;
-                left: 1%;
-                top: 10%;
+                width: 50%;
             }
 
             /* MENU - NAV */

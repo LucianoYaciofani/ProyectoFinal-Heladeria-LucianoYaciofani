@@ -6,8 +6,6 @@
     align-items: center;
     flex-direction: row;
     align-content: center;
-    /*background: $fondoFooter;
-    background: radial-gradient(circle, rgba(249, 248, 243, 1) 0%, rgba(240, 193, 123, 1) 100%);*/
     background-color: $fondoFooter;
 
     /* PIE DE PÁGINA */
@@ -24,15 +22,13 @@
         flex-direction: row;
         width: 80%;
         list-style: none;
-        margin-right: 20px;
+        margin-right: 1.5rem;
+        margin-top: 0.5rem;
     }
 
     /* MENU - LISTAS */
     li {
-        margin: 10px;
-        padding: 10px;
-        font-weight: bold;
-        list-style: none;
+        padding: 20px;
     }
 }
 
@@ -40,13 +36,19 @@
 .fa-facebook {
     font-size: 3rem;
     border-radius: 2.5rem;
+    color: #3b5998;
+    background-color: white;
 }
 
 /* LINK - INSTAGRAM CON LOGO */
 .fa-instagram {
     font-size: 3rem;
     border-radius: 5rem;
+    color: white;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
+
 
 /*
 PASO 1: Definir estrategia --> MOBILE LAST

@@ -104,7 +104,6 @@ body {
 .titulo {
     grid-area: titulo;
     @include grilla (flex, column, center, center, white);
-    justify-content: flex-start;
 
     // TITULO DE LA SECCION
     h2 {
@@ -187,7 +186,7 @@ body {
     grid-area: locall;
     @include grilla (flex, column, center, center, $amarillo);
     border-top: double;
-    background-color: $verde;
+    background-image: url(/img/conomult.jpg);
 
     // TITULO DE LA SECCION    
     h2 {
@@ -225,10 +224,6 @@ body {
         border: double;
         border-radius: 0.5rem;
     }
-}
-
-.fondocono {
-    background-image: url(/img/conomult.jpg);
 }
 
 /* SECCIONES */
@@ -324,7 +319,6 @@ Media Querys */
         align-items: center;
         color: $amarillo;
         border-top: double;
-        background-color: $celeste;
 
         /* ANCHO CARROUSEL PPAL */
         .ancho {
@@ -356,68 +350,138 @@ Media Querys */
 
     /* SECCIONES */
     .productos {
-        color: $marron;
-        border-top: double;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 0px 0px;
+        grid-template-areas:
+            "titulo titulo"
+            "prod1 prod2";
+        grid-area: section2;
+        color: $amarillo;
+        border-top: solid;
+        background-image: url(/img/local25.jpg);
+        background-size: cover;
+    }
 
-        background: {
-            position: center;
-            size: cover;
-        }
+    .titulo {
+        grid-area: titulo;
+    }
 
-        /* PARRAFO PRINCIPAL DE LA SECCIÓN */
-        p {
-            // LLAMO AL MIXIN PRO REALIZADO
-            @include estilosParrafo($marron, 1.5rem, 900, 30px, 80%);
+    .prod1 {
+        grid-area: prod1;
+    }
 
-            margin: {
-                top: 2rem;
-                bottom: 2rem;
-            }
+    .prod2 {
+        grid-area: prod2;
+    }
 
-            /* TEXTO SELECCIONADO */
-            &:hover {
-                background-color: $marron;
-                color: $amarillo;
-                transition-duration: 2s;
-            }
-        }
+    /*
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "titulo titulo titulo titulo"
+        "prod1 prod2 prod3 prod4";
+    grid-area: section2;
+    color: $amarillo;
+    border-top: solid;
+    background-image: url(/img/local25.jpg);
+    background-size: cover;
+}
 
-        /* TABLAS DE SABORES*/
-        .productos__tablas {
-            display: flex;
-            flex-direction: column;
-            margin-top: 2rem;
+.titulo {
+    grid-area: titulo;
+    @include grilla (flex, column, center, center, white);
+    justify-content: flex-start;
+
+    // TITULO DE LA SECCION
+    h2 {
+        font-family: $letraTitulos;
+        // LLAMO AL MIXIN PRO REALIZADO
+        @include estilosParrafo($colorado, 5rem, 100, 100px, 80%);
+        letter-spacing: 4px;
+    }
+
+    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+    /*
+    p {
+        // LLAMO AL MIXIN PRO REALIZADO
+        @include estilosParrafo($letra, 1.5rem, 900, 30px, 80%);
+        background-color: $fondo;
+        border: double;
+        border-radius: 0.5rem;
+
+        /* TEXTO SELECCIONADO */
+    /*
+        &:hover {
+            background-color: $fondo;
+            color: $letra;
+            transition-duration: 2s;
+            border: double;
+            border-radius: 0.5rem;
             width: 90%;
-            margin-bottom: 4rem;
-            align-items: center;
+        }
+    }
+}
+/*
+.prod1,
+.prod2,
+.prod3,
+.prod4 {
+    grid-area: prod1, prod2, prod3, prod4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
-            /* TABLA DE SABORES*/
-            table {
-                width: 60%;
-                background-color: $amarillo;
-                color: $celeste;
-                border-radius: 0.5rem;
-                margin-bottom: 4rem;
+    p {
+        // LLAMO AL MIXIN PRO REALIZADO
+        @include estilosParrafo($marron, 1.2rem, 900, 30px, 100%);
+        background-color: $fondo;
+        border: double;
+        border-radius: 0.5rem;
 
-                /* TABLA SELECCIONADA */
-                &:hover {
-                    background-color: $marron;
-                    color: $amarillo;
-                    transition-duration: 2s;
-                }
-            }
+        /* TEXTO SELECCIONADO */
+    /*
+        &:hover {
+            background-color: $marron;
+            color: $amarillo;
+            transition-duration: 2s;
+            border: double;
+            border-radius: 0.5rem;
+            width: 100%;
         }
     }
 
+    /* LISTAS */
+    /*
+    li {
+        list-style: none;
+        @include estilosParrafo($letra, 1rem, 100, 40px, 100%);
+        background-color: $fondo;
+        border: double;
+        border-radius: 0.5rem;
+        width: 100%;
+
+        &:hover {
+            background-color: $marron;
+            color: $amarillo;
+            transition-duration: 2s;
+            border: double;
+            border-radius: 0.5rem;
+            width: 100%;
+        }
+    }
+}
+
     /* SECCIONES */
     .local {
-        color: $marron;
+        grid-area: locall;
+        @include grilla (flex, column, center, center, $amarillo);
         border-top: double;
-
-        background: {
-            position: center;
-            size: cover;
-        }
+        background-image: url(/img/conomult.jpg);
 
         /* INFORMACIÓN DE SECCIÓN */
         .local__ubicacion {
@@ -430,16 +494,15 @@ Media Querys */
         /* PARRAFO PRINCIPAL DE LA SECCIÓN */
         p {
             // LLAMO AL MIXIN PRO REALIZADO
-            @include estilosParrafo($celeste, 1.5rem, 900, 30px, 60%);
-
-            margin: {
-                top: 2rem;
-                bottom: 3rem;
-            }
-
+            @include estilosParrafo($letra, 1.5rem, 900, 30px, 80%);
+            background-color: $fondo;
             border: double;
             border-radius: 0.5rem;
-            background-color: $amarillo;
+
+            margin: {
+                top: 1rem;
+                bottom: 1rem;
+            }
         }
 
         /* LOCAL SELECCIONADO */
@@ -457,7 +520,7 @@ Media Querys */
 
     /* SECCIONES */
     .contacto {
-        background-color: $celeste;
+
         color: $marron;
         border-top: double;
 

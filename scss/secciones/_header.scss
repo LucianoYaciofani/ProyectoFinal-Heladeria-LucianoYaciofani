@@ -1,7 +1,5 @@
 // /* ENCABEZADO */
 header {
-    /*background: rgb(249, 248, 243);
-    background: linear-gradient(0deg, rgba(249, 248, 243, 1) 0%, rgba(240, 193, 123, 1) 100%);*/
     background-color: $verde;
 
     /* SECCIONES */
@@ -14,7 +12,7 @@ header {
         align-content: center;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        color: #96CEB4;
+        color: $verde;
 
         /* LOGO */
         a img {
@@ -62,15 +60,30 @@ Media Querys */
 
         /* ENCABEZADO */
         header {
-            background: $fondoHeader;
-            background: radial-gradient(circle, rgba(249, 248, 243, 1) 0%, rgba(240, 193, 123, 1) 100%);
+            background: $verde;
 
             /* HEADER */
             .header {
+                grid-area: header;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                align-content: center;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                color: $verde;
                 display: flex;
                 list-style: none;
-                background: $fondoHeader;
-                background: radial-gradient(circle, rgba(249, 248, 243, 1) 0%, rgba(240, 193, 123, 1) 100%);
+
+                /* LOGO */
+                a img {
+                    position: relative;
+                    width: 10%;
+                    height: auto;
+                    left: 1%;
+                    top: 10%;
+                }
 
                 /* MENU - NAV */
                 .nav__links ul {
@@ -80,7 +93,7 @@ Media Querys */
 
                 /* LINKS */
                 .nav__links li a {
-                    color: $celeste;
+                    color: $amarillo;
                     /* text-decoration: none; */
                 }
 

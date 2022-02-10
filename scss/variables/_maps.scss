@@ -1,26 +1,5 @@
 //MAPS + EACH (bucle)
 
-// Declaramos nuestro mapa con los valores de las 4 redes que queremos usar
-$redes: (instagram: white,
-    facebook: #3b5998,
-);
-
-
-@each $red,
-$color in $redes {
-    .red--#{$red} {
-        color: $color;
-
-        @if ($color==white) {
-            background-color: #d6249f;
-        }
-
-        @else {
-            background-color: white;
-        }
-    }
-}
-
 $textoResaltado: (heladeria: black,
     gelato: black,
 );

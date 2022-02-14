@@ -204,6 +204,84 @@ body {
         border-radius: 0.5rem;
         width: 80%; }
 
+/*
+PASO 1: Definir estrategia --> MOBILE LAST
+PASO 2: Escribir media querys --> MAX WIDTH y BREAKPOINTS
+PASO 3: Codear condiciones
+
+Media Querys */
+/* Si como minimo tengo 768px de ancho.... */
+@media (max-width: 768px) {
+  /* SECCIONES */
+  .nosotros {
+    grid-area: nosotros;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+    /* ANCHO CARROUSEL PPAL */ }
+    .nosotros h1 {
+      font-family: "Satisfy", cursive;
+      font-style: italic;
+      font-font-size: 6rem;
+      color: black;
+      font-size: 6rem;
+      font-weight: 100;
+      line-height: 70px;
+      width: 80%; }
+      .nosotros h1 .otraLetra {
+        font-family: "Roboto Slab", serif;
+        font-style: initial;
+        font-size: 2rem;
+        letter-spacing: 10px; }
+    .nosotros .alto {
+      height: 100vh;
+      /* IMAGENES DEL CARROUSEL */ }
+      .nosotros .alto img {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        bottom: 350px;
+        z-index: -1;
+        padding-bottom: 2rem; }
+      .nosotros .alto .cucurucho {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        top: 100px;
+        z-index: -1; }
+    .nosotros .fondocono {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      background-image: url(/img/conomult.jpg);
+      padding-top: 2rem;
+      /* PARRAFO PRINCIPAL DE LA SECCIÓN */ }
+      .nosotros .fondocono h2 {
+        font-family: "Bebas Neue", cursive;
+        color: #D9534F;
+        font-size: 5rem;
+        font-weight: 100;
+        line-height: 100px;
+        width: 80%;
+        letter-spacing: 4px; }
+      .nosotros .fondocono p {
+        color: #666666;
+        font-size: 1.5rem;
+        font-weight: 100;
+        line-height: 30px;
+        width: 80%;
+        /* TEXTO SELECCIONADO */ }
+        .nosotros .fondocono p:hover {
+          background-color: #96CEB4;
+          color: #666666;
+          transition-duration: 2s;
+          padding: 1rem;
+          border: double;
+          border-radius: 0.5rem;
+          width: 80%; } }
+
 .productos {
   display: grid;
   grid-template-columns: auto;
@@ -308,113 +386,6 @@ body {
       border-radius: 0.5rem;
       width: 100%; }
 
-/* SECCIONES */
-.local {
-  grid-area: locall;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  color: #FFEEAD;
-  border-top: double;
-  background-image: url(/img/conomult.jpg); }
-  .local backgr h2 {
-    font-family: "Bebas Neue", cursive;
-    color: #D9534F;
-    font-size: 5rem;
-    font-weight: 100;
-    line-height: 100px;
-    width: 80%;
-    letter-spacing: 4px; }
-  .local .local__ubicacion {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
-    /* LOCAL SELECCIONADO */
-    /* INFORMACIÓN DE SECCIÓN */ }
-    .local .local__ubicacion p {
-      color: black;
-      font-size: 1.5rem;
-      font-weight: 900;
-      line-height: 30px;
-      width: 30%;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      border: double;
-      border-radius: 0.5rem;
-      background-color: #F0EDDC; }
-    .local .local__ubicacion .local--activo:hover {
-      background-color: #7f5539;
-      color: #FFEEAD;
-      transition-duration: 2s; }
-    .local .local__ubicacion .local iframe {
-      display: flex; }
-    .local .local__ubicacion .borde {
-      border: double;
-      border-radius: 0.5rem; }
-
-/* SECCIONES */
-.contacto {
-  grid-area: contacto;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  color: #FFEEAD;
-  border-top: double;
-  background-color: #F0EDDC;
-  background-image: url(/img/cucuruchofrutilla.png);
-  background-repeat: no-repeat;
-  background-position: -3rem;
-  /* PARRAFO PRINCIPAL DE LA SECCIÓN */
-  /* FORMULARIO */ }
-  .contacto h2 {
-    font-family: "Bebas Neue", cursive;
-    color: #D9534F;
-    font-size: 5rem;
-    font-weight: 100;
-    line-height: 100px;
-    width: 80%;
-    letter-spacing: 4px; }
-  .contacto p {
-    color: #666666;
-    font-size: 1.5rem;
-    font-weight: 100;
-    line-height: 30px;
-    width: 100%;
-    /* TEXTO SELECCIONADO */ }
-    .contacto p:hover {
-      background-color: #7f5539;
-      color: #FFEEAD;
-      transition-duration: 2s;
-      border: double;
-      border-radius: 0.5rem; }
-  .contacto .contacto__form {
-    width: 70%;
-    /* FORMULARIO-INPUT */
-    /* FORMULARIO-TEXTO */
-    /* FORMULARIO-SUBMIT */
-    /* FORMULARIO SELECCIONADO */ }
-    .contacto .contacto__form .contacto__form-row {
-      display: flex;
-      flex-direction: row;
-      align-items: center; }
-    .contacto .contacto__form .contacto__form-input {
-      width: 60%;
-      align-items: center; }
-    .contacto .contacto__form .contacto__form-text {
-      width: 100%; }
-    .contacto .contacto__form .contacto__form-sub {
-      width: 60%;
-      margin-bottom: 4rem;
-      font-weight: 600; }
-    .contacto .contacto__form .contacto__form--activo:hover {
-      background-color: #7f5539;
-      color: #FFEEAD;
-      transition-duration: 2s; }
-
 /*
 PASO 1: Definir estrategia --> MOBILE LAST
 PASO 2: Escribir media querys --> MAX WIDTH y BREAKPOINTS
@@ -423,75 +394,6 @@ PASO 3: Codear condiciones
 Media Querys */
 /* Si como minimo tengo 768px de ancho.... */
 @media (max-width: 768px) {
-  /* SECCIONES */
-  .nosotros {
-    grid-area: nosotros;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0px;
-    /* ANCHO CARROUSEL PPAL */ }
-    .nosotros h1 {
-      font-family: "Satisfy", cursive;
-      font-style: italic;
-      font-font-size: 6rem;
-      color: black;
-      font-size: 6rem;
-      font-weight: 100;
-      line-height: 70px;
-      width: 80%; }
-      .nosotros h1 .otraLetra {
-        font-family: "Roboto Slab", serif;
-        font-style: initial;
-        font-size: 2rem;
-        letter-spacing: 10px; }
-    .nosotros .alto {
-      height: 100vh;
-      /* IMAGENES DEL CARROUSEL */ }
-      .nosotros .alto img {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        bottom: 350px;
-        z-index: -1;
-        padding-bottom: 2rem; }
-      .nosotros .alto .cucurucho {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        top: 100px;
-        z-index: -1; }
-    .nosotros .fondocono {
-      display: flex;
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
-      background-image: url(/img/conomult.jpg);
-      padding-top: 2rem;
-      /* PARRAFO PRINCIPAL DE LA SECCIÓN */ }
-      .nosotros .fondocono h2 {
-        font-family: "Bebas Neue", cursive;
-        color: #D9534F;
-        font-size: 5rem;
-        font-weight: 100;
-        line-height: 100px;
-        width: 80%;
-        letter-spacing: 4px; }
-      .nosotros .fondocono p {
-        color: #666666;
-        font-size: 1.5rem;
-        font-weight: 100;
-        line-height: 30px;
-        width: 80%;
-        /* TEXTO SELECCIONADO */ }
-        .nosotros .fondocono p:hover {
-          background-color: #96CEB4;
-          color: #666666;
-          transition-duration: 2s;
-          padding: 1rem;
-          border: double;
-          border-radius: 0.5rem;
-          width: 80%; }
   /* SECCIONES */
   .productos {
     display: grid;
@@ -595,7 +497,62 @@ Media Querys */
         transition-duration: 2s;
         border: double;
         border-radius: 0.5rem;
-        width: 100%; }
+        width: 100%; } }
+
+/* SECCIONES */
+.local {
+  grid-area: locall;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: #FFEEAD;
+  border-top: double;
+  background-image: url(/img/conomult.jpg);
+  background-size: cover; }
+  .local h2 {
+    font-family: "Bebas Neue", cursive;
+    color: #D9534F;
+    font-size: 5rem;
+    font-weight: 100;
+    line-height: 100px;
+    width: 80%;
+    letter-spacing: 4px; }
+  .local .local__ubicacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5rem;
+    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+    /* INFORMACIÓN DE SECCIÓN */ }
+    .local .local__ubicacion p {
+      color: black;
+      font-size: 1.5rem;
+      font-weight: 900;
+      line-height: 30px;
+      width: 30%;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border: double;
+      border-radius: 0.5rem;
+      background-color: #F0EDDC;
+      /* LOCAL SELECCIONADO */ }
+      .local .local__ubicacion p:hover {
+        background-color: #7f5539;
+        color: #FFEEAD;
+        transition-duration: 2s; }
+    .local .local__ubicacion .local iframe {
+      display: flex; }
+
+/*
+PASO 1: Definir estrategia --> MOBILE LAST
+PASO 2: Escribir media querys --> MAX WIDTH y BREAKPOINTS
+PASO 3: Codear condiciones
+
+Media Querys */
+/* Si como minimo tengo 768px de ancho.... */
+@media (max-width: 768px) {
   /* SECCIONES */
   .local {
     grid-area: locall;
@@ -606,44 +563,113 @@ Media Querys */
     color: #FFEEAD;
     border-top: double;
     background-image: url(/img/conomult.jpg);
-    /* INFORMACIÓN DE SECCIÓN */
-    /* PARRAFO PRINCIPAL DE LA SECCIÓN */
-    /* LOCAL SELECCIONADO */
+    background-size: cover;
     /* INFORMACIÓN DE SECCIÓN */ }
+    .local h2 {
+      font-family: "Bebas Neue", cursive;
+      color: #D9534F;
+      font-size: 5rem;
+      font-weight: 100;
+      line-height: 100px;
+      width: 80%;
+      letter-spacing: 4px; }
     .local .local__ubicacion {
       display: flex;
       flex-direction: column;
-      width: 100%;
-      margin-bottom: 4rem; }
-    .local p {
-      color: #666666;
-      font-size: 1.5rem;
-      font-weight: 900;
-      line-height: 30px;
-      width: 80%;
-      background-color: #F0EDDC;
+      /* PARRAFO PRINCIPAL DE LA SECCIÓN */ }
+      .local .local__ubicacion p {
+        color: #666666;
+        font-size: 1.5rem;
+        font-weight: 900;
+        line-height: 30px;
+        width: 80%;
+        background-color: #F0EDDC;
+        border: double;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        /* LOCAL SELECCIONADO */ }
+        .local .local__ubicacion p:hover {
+          background-color: #7f5539;
+          color: #FFEEAD;
+          transition-duration: 2s; } }
+
+/* SECCIONES */
+.contacto {
+  grid-area: contacto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: #FFEEAD;
+  border-top: double;
+  background-color: #F0EDDC;
+  background-image: url(/img/cucuruchofrutilla.png);
+  background-repeat: no-repeat;
+  background-position: -3rem;
+  /* PARRAFO PRINCIPAL DE LA SECCIÓN */
+  /* FORMULARIO */ }
+  .contacto h2 {
+    font-family: "Bebas Neue", cursive;
+    color: #D9534F;
+    font-size: 5rem;
+    font-weight: 100;
+    line-height: 100px;
+    width: 80%;
+    letter-spacing: 4px; }
+  .contacto p {
+    color: #666666;
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 30px;
+    width: 100%;
+    /* TEXTO SELECCIONADO */ }
+    .contacto p:hover {
+      background-color: #7f5539;
+      color: #FFEEAD;
+      transition-duration: 2s;
       border: double;
-      border-radius: 0.5rem;
-      margin-top: 1rem;
-      margin-bottom: 1rem; }
-    .local .local--activo:hover {
+      border-radius: 0.5rem; }
+  .contacto .contacto__form {
+    width: 70%;
+    /* FORMULARIO-INPUT */
+    /* FORMULARIO-TEXTO */
+    /* FORMULARIO-SUBMIT */
+    /* FORMULARIO SELECCIONADO */ }
+    .contacto .contacto__form .contacto__form-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+    .contacto .contacto__form .contacto__form-input {
+      width: 60%;
+      align-items: center; }
+    .contacto .contacto__form .contacto__form-text {
+      width: 100%; }
+    .contacto .contacto__form .contacto__form-sub {
+      width: 60%;
+      margin-bottom: 4rem;
+      font-weight: 600; }
+    .contacto .contacto__form .contacto__form--activo:hover {
       background-color: #7f5539;
       color: #FFEEAD;
       transition-duration: 2s; }
-    .local .local iframe {
-      display: flex; }
+
+/*
+PASO 1: Definir estrategia --> MOBILE LAST
+PASO 2: Escribir media querys --> MAX WIDTH y BREAKPOINTS
+PASO 3: Codear condiciones
+
+Media Querys */
+/* Si como minimo tengo 768px de ancho.... */
+@media (max-width: 768px) {
   /* SECCIONES */
   .contacto {
     grid-area: contacto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     border-top: double;
-    background-color: #F0EDDC;
     background-image: url(/img/cucuruchofrutilla.png);
-    background-repeat: no-repeat;
-    background-position-y: 1rem;
-    background-position: -3rem;
+    background-size: cover;
+    background-position: -11rem;
     color: #FFEEAD;
     /* PARRAFO PRINCIPAL DE LA SECCIÓN */
     /* FORMULARIO */ }
@@ -660,7 +686,8 @@ Media Querys */
       font-size: 1.5rem;
       font-weight: 100;
       line-height: 30px;
-      width: 100%;
+      width: 50%;
+      text-align: center;
       /* TEXTO SELECCIONADO */ }
       .contacto p:hover {
         background-color: #7f5539;
@@ -669,7 +696,7 @@ Media Querys */
         border: double;
         border-radius: 0.5rem; }
     .contacto .contacto__form {
-      width: 100%;
+      width: 80%;
       /* FORMULARIO-INPUT */
       /* FORMULARIO-TEXTO */
       /* FORMULARIO-SUBMIT -- MAP-GET*/ }
@@ -685,7 +712,7 @@ Media Querys */
         border: double;
         background-color: #FFEEAD;
         border-radius: 0.5rem;
-        width: 70%;
+        width: 55%;
         border-bottom: solid 1px; }
       .contacto .contacto__form .contacto__form-text {
         color: #7f5539;
@@ -699,7 +726,7 @@ Media Querys */
         border-bottom: solid 1px; }
       .contacto .contacto__form .contacto__form-sub {
         color: #7f5539;
-        width: 65%;
+        width: 55%;
         border: double;
         border-bottom: solid 1px;
         font-size: 1rem;
@@ -770,8 +797,7 @@ Media Querys */
     align-items: center;
     color: #5d4037;
     border-top: double;
-    background: #f0c17b;
-    background: radial-gradient(circle, #f0c17b 0%, #f9f8f3 100%);
+    background-color: #FFAD60;
     /* PIE DE PÁGINA */
     /* MENU - NAV */
     /* MENU - LISTAS */ }
@@ -783,9 +809,6 @@ Media Querys */
       display: flex;
       flex-direction: row;
       width: 80%;
-      list-style: none;
-      margin-right: 20px; }
+      list-style: none; }
     .footer .footer__links li {
-      margin: 10px;
-      padding: 10px;
-      font-weight: bold; } }
+      margin: 10px; } }

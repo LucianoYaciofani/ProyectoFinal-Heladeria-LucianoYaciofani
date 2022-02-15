@@ -141,6 +141,7 @@ Media Querys */
                 position: relative;
                 width: auto;
                 height: auto;
+                top: 350px;
                 top: 1px;
             }
         }
@@ -283,8 +284,6 @@ Media Querys */
             }
         }
     }
-
-
 }
 
 /*
@@ -395,8 +394,6 @@ Media Querys */
                 }
             }
         }
-
-
     }
 
     .prod2 {
@@ -428,24 +425,24 @@ Media Querys */
 
         ul {
             padding-left: 0rem;
-        }
 
-        /* LISTAS */
-        li {
-            list-style: none;
-            @include estilosParrafo($letra, 1rem, 100, 40px, 100%);
-            background-color: $fondo;
-            border: double;
-            border-radius: 0.5rem;
-            width: 100%;
-
-            &:hover {
-                background-color: $marron;
-                color: $amarillo;
-                transition-duration: 2s;
+            /* LISTAS */
+            li {
+                list-style: none;
+                @include estilosParrafo($letra, 1rem, 100, 40px, 100%);
+                background-color: $fondo;
                 border: double;
                 border-radius: 0.5rem;
                 width: 100%;
+
+                &:hover {
+                    background-color: $marron;
+                    color: $amarillo;
+                    transition-duration: 2s;
+                    border: double;
+                    border-radius: 0.5rem;
+                    width: 100%;
+                }
             }
         }
     }
@@ -478,24 +475,24 @@ Media Querys */
 
         ul {
             padding-left: 0rem;
-        }
 
-        /* LISTAS */
-        li {
-            list-style: none;
-            @include estilosParrafo($letra, 1rem, 100, 40px, 100%);
-            background-color: $fondo;
-            border: double;
-            border-radius: 0.5rem;
-            width: 100%;
-
-            &:hover {
-                background-color: $marron;
-                color: $amarillo;
-                transition-duration: 2s;
+            /* LISTAS */
+            li {
+                list-style: none;
+                @include estilosParrafo($letra, 1rem, 100, 40px, 100%);
+                background-color: $fondo;
                 border: double;
                 border-radius: 0.5rem;
                 width: 100%;
+
+                &:hover {
+                    background-color: $marron;
+                    color: $amarillo;
+                    transition-duration: 2s;
+                    border: double;
+                    border-radius: 0.5rem;
+                    width: 100%;
+                }
             }
         }
     }
@@ -529,24 +526,24 @@ Media Querys */
 
         ul {
             padding-left: 0rem;
-        }
 
-        /* LISTAS */
-        li {
-            list-style: none;
-            @include estilosParrafo($letra, 1rem, 100, 40px, 100%);
-            background-color: $fondo;
-            border: double;
-            border-radius: 0.5rem;
-            width: 100%;
-
-            &:hover {
-                background-color: $marron;
-                color: $amarillo;
-                transition-duration: 2s;
+            /* LISTAS */
+            li {
+                list-style: none;
+                @include estilosParrafo($letra, 1rem, 100, 40px, 100%);
+                background-color: $fondo;
                 border: double;
                 border-radius: 0.5rem;
                 width: 100%;
+
+                &:hover {
+                    background-color: $marron;
+                    color: $amarillo;
+                    transition-duration: 2s;
+                    border: double;
+                    border-radius: 0.5rem;
+                    width: 100%;
+                }
             }
         }
     }
@@ -637,7 +634,7 @@ Media Querys */
             /* PARRAFO PRINCIPAL DE LA SECCIÓN */
             p {
                 // LLAMO AL MIXIN PRO REALIZADO
-                @include estilosParrafo($letra, 1.5rem, 900, 30px, 80%);
+                @include estilosParrafo($letra, 1.5rem, 900, 30px, 60%);
                 background-color: $fondo;
                 border: double;
                 border-radius: 0.5rem;

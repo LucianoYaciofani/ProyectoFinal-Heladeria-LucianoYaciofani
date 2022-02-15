@@ -245,6 +245,7 @@ Media Querys */
         position: relative;
         width: auto;
         height: auto;
+        top: 350px;
         top: 1px; }
     .nosotros .fondocono {
       display: flex;
@@ -493,8 +494,7 @@ Media Querys */
     justify-content: center;
     flex-direction: column;
     margin-top: -1rem;
-    margin-bottom: 3rem;
-    /* LISTAS */ }
+    margin-bottom: 3rem; }
     .prod2 p {
       color: #7f5539;
       font-size: 1.2rem;
@@ -513,33 +513,33 @@ Media Querys */
         border-radius: 0.5rem;
         width: 100%; }
     .prod2 ul {
-      padding-left: 0rem; }
-    .prod2 li {
-      list-style: none;
-      color: #666666;
-      font-size: 1rem;
-      font-weight: 100;
-      line-height: 40px;
-      width: 100%;
-      background-color: #F0EDDC;
-      border: double;
-      border-radius: 0.5rem;
-      width: 100%; }
-      .prod2 li:hover {
-        background-color: #7f5539;
-        color: #FFEEAD;
-        transition-duration: 2s;
+      padding-left: 0rem;
+      /* LISTAS */ }
+      .prod2 ul li {
+        list-style: none;
+        color: #666666;
+        font-size: 1rem;
+        font-weight: 100;
+        line-height: 40px;
+        width: 100%;
+        background-color: #F0EDDC;
         border: double;
         border-radius: 0.5rem;
         width: 100%; }
+        .prod2 ul li:hover {
+          background-color: #7f5539;
+          color: #FFEEAD;
+          transition-duration: 2s;
+          border: double;
+          border-radius: 0.5rem;
+          width: 100%; }
   .prod3 {
     grid-area: prod3;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin-top: 1rem;
-    margin-bottom: 0rem;
-    /* LISTAS */ }
+    margin-bottom: 0rem; }
     .prod3 p {
       color: #7f5539;
       font-size: 1.2rem;
@@ -558,25 +558,26 @@ Media Querys */
         border-radius: 0.5rem;
         width: 100%; }
     .prod3 ul {
-      padding-left: 0rem; }
-    .prod3 li {
-      list-style: none;
-      color: #666666;
-      font-size: 1rem;
-      font-weight: 100;
-      line-height: 40px;
-      width: 100%;
-      background-color: #F0EDDC;
-      border: double;
-      border-radius: 0.5rem;
-      width: 100%; }
-      .prod3 li:hover {
-        background-color: #7f5539;
-        color: #FFEEAD;
-        transition-duration: 2s;
+      padding-left: 0rem;
+      /* LISTAS */ }
+      .prod3 ul li {
+        list-style: none;
+        color: #666666;
+        font-size: 1rem;
+        font-weight: 100;
+        line-height: 40px;
+        width: 100%;
+        background-color: #F0EDDC;
         border: double;
         border-radius: 0.5rem;
         width: 100%; }
+        .prod3 ul li:hover {
+          background-color: #7f5539;
+          color: #FFEEAD;
+          transition-duration: 2s;
+          border: double;
+          border-radius: 0.5rem;
+          width: 100%; }
   .prod4 {
     grid-area: prod4;
     display: flex;
@@ -584,8 +585,7 @@ Media Querys */
     justify-content: flex-start;
     flex-direction: column;
     margin-top: -2rem;
-    margin-bottom: 3rem;
-    /* LISTAS */ }
+    margin-bottom: 3rem; }
     .prod4 p {
       color: #7f5539;
       font-size: 1.2rem;
@@ -604,25 +604,26 @@ Media Querys */
         border-radius: 0.5rem;
         width: 100%; }
     .prod4 ul {
-      padding-left: 0rem; }
-    .prod4 li {
-      list-style: none;
-      color: #666666;
-      font-size: 1rem;
-      font-weight: 100;
-      line-height: 40px;
-      width: 100%;
-      background-color: #F0EDDC;
-      border: double;
-      border-radius: 0.5rem;
-      width: 100%; }
-      .prod4 li:hover {
-        background-color: #7f5539;
-        color: #FFEEAD;
-        transition-duration: 2s;
+      padding-left: 0rem;
+      /* LISTAS */ }
+      .prod4 ul li {
+        list-style: none;
+        color: #666666;
+        font-size: 1rem;
+        font-weight: 100;
+        line-height: 40px;
+        width: 100%;
+        background-color: #F0EDDC;
         border: double;
         border-radius: 0.5rem;
-        width: 100%; } }
+        width: 100%; }
+        .prod4 ul li:hover {
+          background-color: #7f5539;
+          color: #FFEEAD;
+          transition-duration: 2s;
+          border: double;
+          border-radius: 0.5rem;
+          width: 100%; } }
 
 /* SECCIONES */
 .local {
@@ -707,7 +708,7 @@ Media Querys */
         font-size: 1.5rem;
         font-weight: 900;
         line-height: 30px;
-        width: 80%;
+        width: 60%;
         background-color: #F0EDDC;
         border: double;
         border-radius: 0.5rem;

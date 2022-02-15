@@ -166,8 +166,7 @@ body {
       position: relative;
       width: 100vw;
       bottom: 350px;
-      z-index: -1;
-      padding-bottom: 2rem; }
+      z-index: -1; }
     .nosotros .alto .cucurucho {
       position: relative;
       top: 100px;
@@ -235,21 +234,18 @@ Media Querys */
         font-size: 2rem;
         letter-spacing: 10px; }
     .nosotros .alto {
-      height: 100vh;
+      height: auto;
       /* IMAGENES DEL CARROUSEL */ }
       .nosotros .alto img {
         position: relative;
-        width: 100vw;
-        height: 100vh;
-        bottom: 350px;
-        z-index: -1;
-        padding-bottom: 2rem; }
+        width: auto;
+        height: auto;
+        bottom: 0px; }
       .nosotros .alto .cucurucho {
         position: relative;
-        width: 100vw;
-        height: 100vh;
-        top: 100px;
-        z-index: -1; }
+        width: auto;
+        height: auto;
+        top: 1px; }
     .nosotros .fondocono {
       display: flex;
       width: 100%;
@@ -333,11 +329,14 @@ Media Querys */
 .prod3,
 .prod4 {
   grid-area: prod1, prod2, prod3, prod4;
-  display: flex;
+  display: grid;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* LISTAS */ }
+  align-content: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem; }
   .prod1 p,
   .prod2 p,
   .prod3 p,
@@ -361,30 +360,36 @@ Media Querys */
       border: double;
       border-radius: 0.5rem;
       width: 100%; }
-  .prod1 li,
-  .prod2 li,
-  .prod3 li,
-  .prod4 li {
-    list-style: none;
-    color: #666666;
-    font-size: 1rem;
-    font-weight: 100;
-    line-height: 40px;
-    width: 100%;
-    background-color: #F0EDDC;
-    border: double;
-    border-radius: 0.5rem;
-    width: 100%; }
-    .prod1 li:hover,
-    .prod2 li:hover,
-    .prod3 li:hover,
-    .prod4 li:hover {
-      background-color: #7f5539;
-      color: #FFEEAD;
-      transition-duration: 2s;
+  .prod1 ul,
+  .prod2 ul,
+  .prod3 ul,
+  .prod4 ul {
+    padding-left: 0rem;
+    /* LISTAS */ }
+    .prod1 ul li,
+    .prod2 ul li,
+    .prod3 ul li,
+    .prod4 ul li {
+      list-style: none;
+      color: #666666;
+      font-size: 1rem;
+      font-weight: 100;
+      line-height: 40px;
+      width: 100%;
+      background-color: #F0EDDC;
       border: double;
       border-radius: 0.5rem;
       width: 100%; }
+      .prod1 ul li:hover,
+      .prod2 ul li:hover,
+      .prod3 ul li:hover,
+      .prod4 ul li:hover {
+        background-color: #7f5539;
+        color: #FFEEAD;
+        transition-duration: 2s;
+        border: double;
+        border-radius: 0.5rem;
+        width: 100%; }
 
 /*
 PASO 1: Definir estrategia --> MOBILE LAST
@@ -400,7 +405,7 @@ Media Querys */
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 0px 0px;
-    grid-template-areas: "titulo titulo" "prod1 prod2" "prod3 prod4";
+    grid-template-areas: "titulo titulo" "prod1 prod3" "prod2 prod4";
     grid-area: productos;
     color: #FFEEAD;
     border-top: solid;
@@ -436,19 +441,151 @@ Media Querys */
         border: double;
         border-radius: 0.5rem;
         width: 90%; }
-  .prod1,
-  .prod2,
-  .prod3,
-  .prod4 {
+  .prod1 {
+    grid-area: prod1;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 0rem; }
+    .prod1 p {
+      color: #7f5539;
+      font-size: 1.2rem;
+      font-weight: 900;
+      line-height: 30px;
+      width: 100%;
+      background-color: #F0EDDC;
+      border: double;
+      border-radius: 0.5rem;
+      /* TEXTO SELECCIONADO */ }
+      .prod1 p:hover {
+        background-color: #7f5539;
+        color: #FFEEAD;
+        transition-duration: 2s;
+        border: double;
+        border-radius: 0.5rem;
+        width: 100%; }
+    .prod1 ul {
+      padding-left: 0rem;
+      /* LISTAS */ }
+      .prod1 ul li {
+        list-style: none;
+        color: #666666;
+        font-size: 1rem;
+        font-weight: 100;
+        line-height: 40px;
+        width: 100%;
+        background-color: #F0EDDC;
+        border: double;
+        border-radius: 0.5rem;
+        width: 100%; }
+        .prod1 ul li:hover {
+          background-color: #7f5539;
+          color: #FFEEAD;
+          transition-duration: 2s;
+          border: double;
+          border-radius: 0.5rem;
+          width: 100%; }
+  .prod2 {
+    grid-area: prod2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    text-align: center;
-    justify-content: flex-start;
-    align-content: flex-start;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
     /* LISTAS */ }
-    .prod1 p,
-    .prod2 p,
-    .prod3 p,
+    .prod2 p {
+      color: #7f5539;
+      font-size: 1.2rem;
+      font-weight: 900;
+      line-height: 30px;
+      width: 100%;
+      background-color: #F0EDDC;
+      border: double;
+      border-radius: 0.5rem;
+      /* TEXTO SELECCIONADO */ }
+      .prod2 p:hover {
+        background-color: #7f5539;
+        color: #FFEEAD;
+        transition-duration: 2s;
+        border: double;
+        border-radius: 0.5rem;
+        width: 100%; }
+    .prod2 ul {
+      padding-left: 0rem; }
+    .prod2 li {
+      list-style: none;
+      color: #666666;
+      font-size: 1rem;
+      font-weight: 100;
+      line-height: 40px;
+      width: 100%;
+      background-color: #F0EDDC;
+      border: double;
+      border-radius: 0.5rem;
+      width: 100%; }
+      .prod2 li:hover {
+        background-color: #7f5539;
+        color: #FFEEAD;
+        transition-duration: 2s;
+        border: double;
+        border-radius: 0.5rem;
+        width: 100%; }
+  .prod3 {
+    grid-area: prod3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    /* LISTAS */ }
+    .prod3 p {
+      color: #7f5539;
+      font-size: 1.2rem;
+      font-weight: 900;
+      line-height: 30px;
+      width: 100%;
+      background-color: #F0EDDC;
+      border: double;
+      border-radius: 0.5rem;
+      /* TEXTO SELECCIONADO */ }
+      .prod3 p:hover {
+        background-color: #7f5539;
+        color: #FFEEAD;
+        transition-duration: 2s;
+        border: double;
+        border-radius: 0.5rem;
+        width: 100%; }
+    .prod3 ul {
+      padding-left: 0rem; }
+    .prod3 li {
+      list-style: none;
+      color: #666666;
+      font-size: 1rem;
+      font-weight: 100;
+      line-height: 40px;
+      width: 100%;
+      background-color: #F0EDDC;
+      border: double;
+      border-radius: 0.5rem;
+      width: 100%; }
+      .prod3 li:hover {
+        background-color: #7f5539;
+        color: #FFEEAD;
+        transition-duration: 2s;
+        border: double;
+        border-radius: 0.5rem;
+        width: 100%; }
+  .prod4 {
+    grid-area: prod4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+    /* LISTAS */ }
     .prod4 p {
       color: #7f5539;
       font-size: 1.2rem;
@@ -459,9 +596,6 @@ Media Querys */
       border: double;
       border-radius: 0.5rem;
       /* TEXTO SELECCIONADO */ }
-      .prod1 p:hover,
-      .prod2 p:hover,
-      .prod3 p:hover,
       .prod4 p:hover {
         background-color: #7f5539;
         color: #FFEEAD;
@@ -469,14 +603,8 @@ Media Querys */
         border: double;
         border-radius: 0.5rem;
         width: 100%; }
-    .prod1 ul,
-    .prod2 ul,
-    .prod3 ul,
     .prod4 ul {
       padding-left: 0rem; }
-    .prod1 li,
-    .prod2 li,
-    .prod3 li,
     .prod4 li {
       list-style: none;
       color: #666666;
@@ -488,9 +616,6 @@ Media Querys */
       border: double;
       border-radius: 0.5rem;
       width: 100%; }
-      .prod1 li:hover,
-      .prod2 li:hover,
-      .prod3 li:hover,
       .prod4 li:hover {
         background-color: #7f5539;
         color: #FFEEAD;

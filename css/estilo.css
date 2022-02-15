@@ -69,7 +69,6 @@ header {
     align-content: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    color: #96CEB4;
     /* LOGO */ }
     header .header a img {
       position: fixed;
@@ -77,19 +76,18 @@ header {
       height: auto;
       left: 1%;
       top: 2%; }
-  header .nav__links ul {
-    display: flex;
-    margin-right: 50px;
-    /* MENU - LISTAS */
-    /* LINKS */
+  header nav button {
+    margin-right: 3rem;
+    margin-bottom: 3rem; }
+  header nav div div {
+    margin-right: 1rem; }
+  header a {
+    margin: 10px;
+    padding: 10px;
+    color: #FFEEAD;
+    text-decoration: none;
     /* MAYUSCULAS EN MENU  */ }
-    header .nav__links ul li {
-      margin: 10px;
-      padding: 10px; }
-    header .nav__links ul li a {
-      color: #FFEEAD;
-      text-decoration: none; }
-    header .nav__links ul .nav__links--activo:hover {
+    header a:hover {
       color: #D9534F;
       text-transform: uppercase; }
 
@@ -112,25 +110,25 @@ Media Querys */
       flex-direction: row;
       margin-top: 2rem;
       margin-bottom: 2rem;
-      color: #96CEB4;
       /* LOGO */
-      /* MENU - NAV */
-      /* LINKS */
-      /* MAYUSCULAS EN MENU  */ }
+      /* MENU - NAV */ }
       header .header a img {
         position: relative;
         width: 50%; }
-      header .header .nav__links ul {
-        display: inline;
-        margin-right: 10rem; }
-      header .header .nav__links li a {
-        font-weight: bold;
-        font-size: 1.3rem;
-        color: #FFEEAD; }
-      header .header .nav__links--activo:hover {
-        color: #7f5539;
-        text-transform: uppercase;
-        transition-duration: 2s; } }
+      header .header nav button {
+        margin-right: 3rem;
+        margin-bottom: 3rem; }
+      header .header nav div div {
+        margin-right: 1rem; }
+      header .header a {
+        margin: 10px;
+        padding: 10px;
+        color: #FFEEAD;
+        text-decoration: none;
+        /* MAYUSCULAS EN MENU  */ }
+        header .header a:hover {
+          color: #D9534F;
+          text-transform: uppercase; } }
 
 body {
   font-family: "Roboto", sans-serif; }
@@ -238,15 +236,12 @@ Media Querys */
       /* IMAGENES DEL CARROUSEL */ }
       .nosotros .alto img {
         position: relative;
-        width: auto;
         height: auto;
         bottom: 0px; }
       .nosotros .alto .cucurucho {
         position: relative;
-        width: auto;
         height: auto;
-        top: 350px;
-        top: 1px; }
+        top: 0px; }
     .nosotros .fondocono {
       display: flex;
       width: 100%;
@@ -411,7 +406,7 @@ Media Querys */
     color: #FFEEAD;
     border-top: solid;
     background-image: url(/img/local25.jpg);
-    background-size: cover; }
+    background-size: auto; }
   .titulo {
     grid-area: titulo;
     display: flex;
@@ -812,7 +807,7 @@ Media Querys */
       font-size: 1.5rem;
       font-weight: 100;
       line-height: 30px;
-      width: 50%;
+      width: 100%;
       text-align: center;
       /* TEXTO SELECCIONADO */ }
       .contacto p:hover {

@@ -12,7 +12,6 @@ header {
         align-content: center;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        color: $verde;
 
         /* LOGO */
         a img {
@@ -24,25 +23,24 @@ header {
         }
     }
 
+    nav button {
+        margin-right: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    nav div div {
+        margin-right: 1rem;
+    }
+
     /* MENU - NAV */
-    .nav__links ul {
-        display: flex;
-        margin-right: 50px;
-
-        /* MENU - LISTAS */
-        li {
-            margin: 10px;
-            padding: 10px;
-        }
-
-        /* LINKS */
-        li a {
-            color: $amarillo;
-            text-decoration: none;
-        }
+    a {
+        margin: 10px;
+        padding: 10px;
+        color: $amarillo;
+        text-decoration: none;
 
         /* MAYUSCULAS EN MENU  */
-        .nav__links--activo:hover {
+        &:hover {
             color: $colorado;
             text-transform: uppercase;
         }
@@ -71,7 +69,6 @@ Media Querys */
             flex-direction: row;
             margin-top: 2rem;
             margin-bottom: 2rem;
-            color: $verde;
 
             /* LOGO */
             a img {
@@ -79,24 +76,27 @@ Media Querys */
                 width: 50%;
             }
 
+            nav button {
+                margin-right: 3rem;
+                margin-bottom: 3rem;
+            }
+
+            nav div div {
+                margin-right: 1rem;
+            }
+
             /* MENU - NAV */
-            .nav__links ul {
-                display: inline;
-                margin-right: 10rem;
-            }
-
-            /* LINKS */
-            .nav__links li a {
-                font-weight: bold;
-                font-size: 1.3rem;
+            a {
+                margin: 10px;
+                padding: 10px;
                 color: $amarillo;
-            }
+                text-decoration: none;
 
-            /* MAYUSCULAS EN MENU  */
-            .nav__links--activo:hover {
-                color: $marron;
-                text-transform: uppercase;
-                transition-duration: 2s;
+                /* MAYUSCULAS EN MENU  */
+                &:hover {
+                    color: $colorado;
+                    text-transform: uppercase;
+                }
             }
         }
     }

@@ -132,17 +132,14 @@ Media Querys */
             /* IMAGENES DEL CARROUSEL */
             img {
                 position: relative;
-                width: auto;
                 height: auto;
                 bottom: 0px;
             }
 
             .cucurucho {
                 position: relative;
-                width: auto;
                 height: auto;
-                top: 350px;
-                top: 1px;
+                top: 0px;
             }
         }
 
@@ -310,7 +307,7 @@ Media Querys */
         color: $amarillo;
         border-top: solid;
         background-image: url(/img/local25.jpg);
-        background-size: cover;
+        background-size: auto;
     }
 
     .titulo {
@@ -760,7 +757,7 @@ Media Querys */
         /* PARRAFO PRINCIPAL DE LA SECCIÓN */
         p {
             // LLAMO AL MIXIN PRO REALIZADO
-            @include estilosParrafo($letra, 1.5rem, 100, 30px, 50%);
+            @include estilosParrafo($letra, 1.5rem, 100, 30px, 100%);
             text-align: center;
 
             /* TEXTO SELECCIONADO */
